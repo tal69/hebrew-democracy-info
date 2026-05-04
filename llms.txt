@@ -6,6 +6,9 @@
 
 ## תוכן האתר
 
+- [האם מתקפה על ארגוני חברה אזרחית מחלישה את הדמוקרטיה?](https://tal69.github.io/hebrew-democracy-info/democracy_civil_society_ngos_backsliding_summary_he.html): איך עמדות ציבוריות כלפי עמותות יכולות לאפשר או לבלום פגיעה במרחב הדמוקרטי. מחברות/מחברים: אסיף אפרת, עומר יאיר.
+- [מה קורה לשירות הציבורי כשהדמוקרטיה נשחקת?](https://tal69.github.io/hebrew-democracy-info/democracy_civil_servants_backsliding_summary_he.html): איך עובדי מדינה מגיבים כשהם מזהים איום על מוסדות הדמוקרטיה. מחברות/מחברים: סער אלון-ברקת, שרון גלעד, ניר קוסטי, אילנה שפייזמן.
+- [האם נסיגה דמוקרטית היא רק ויכוח על בית המשפט?](https://tal69.github.io/hebrew-democracy-info/democracy_regime_classification_backsliding_summary_he.html): למה סיווג המשטר הישראלי משנה את האופן שבו מבינים את המשבר. מחברות/מחברים: גל אריאלי.
 - [האם איגודי עובדים יכולים להגן על הדמוקרטיה?](https://tal69.github.io/hebrew-democracy-info/democracy_trade_unions_summary_he.html): איך כוח עבודה מאורגן יכול להשפיע על מאבקים נגד נסיגה דמוקרטית. מחברות/מחברים: אסף בונדי.
 - [כשהוויכוח על הדמוקרטיה פוגש את הכלכלה](https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_reform_economy_summary_he.html): מה קורה לאמון משקיעים ולתפיסת סיכון בזמן משבר חוקתי. מחברות/מחברים: ארז כהן.
 - [נסיגה דמוקרטית ואלימות פוליטית: מה קורה לתודעה הציבורית?](https://tal69.github.io/hebrew-democracy-info/democracy_political_violence_summary_he.html): איך שחיקה במוסדות דמוקרטיים משפיעה על הצדקת אלימות פוליטית. מחברות/מחברים: טל שאנן, סיון הירש-הפלר, דפנה קנטי, יוליה אלעד-שטרנגר.
