@@ -39,11 +39,43 @@
       border: 1px solid var(--rule);
     }
 
-    .site-logo {
+    .logo-link {
       display: block;
       width: min(260px, 70vw);
-      height: auto;
       margin: 0 0 28px auto;
+    }
+
+    .logo-link:focus-visible,
+    .home-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .site-logo {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 20px;
+      color: #0563c1;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .home-link:hover {
+      text-decoration: underline;
+    }
+
+    .home-icon {
+      width: 19px;
+      height: 19px;
+      flex: 0 0 auto;
     }
 
     h1, h2, p, .meta-row {
@@ -167,7 +199,16 @@
 </head>
 <body>
   <main>
-    <img class="site-logo" src="HEB_bold.jpg" alt="לוגו אוניברסיטת תל אביב">
+    <a class="logo-link" href="https://www.tau.ac.il/" aria-label="אתר אוניברסיטת תל אביב">
+      <img class="site-logo" src="HEB_bold.jpg" alt="לוגו אוניברסיטת תל אביב">
+    </a>
+    <a class="home-link" href="index.html" aria-label="חזרה לעמוד הבית">
+      <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11.5 12 4l9 7.5"></path>
+        <path d="M5 10.5V20h5v-6h4v6h5v-9.5"></path>
+      </svg>
+      <span>לעמוד הבית</span>
+    </a>
     <h1>כשהוויכוח על הדמוקרטיה פוגש את הכלכלה</h1>
     <p class="subtitle">תמצית עברית לקהל הרחב בישראל</p>
 
