@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tal69.github.io/hebrew-democracy-info/sitemap.xml

@@ -1,0 +1,26 @@
+# הנגשת מידע בנושאי דמוקרטיה
+
+> תמציות מאמרים אקדמיים של חוקרות וחוקרים ישראלים בנושאי דמוקרטיה ליברלית, זכויות, מוסדות ושלטון החוק.
+
+אתר עברי המרכז תמציות נגישות לקהל הרחב של מאמרים אקדמיים מאת חוקרות וחוקרים ישראלים בנושאי דמוקרטיה ליברלית, זכויות, מוסדות ושלטון החוק.
+
+## תוכן האתר
+
+- [האם איגודי עובדים יכולים להגן על הדמוקרטיה?](https://tal69.github.io/hebrew-democracy-info/democracy_trade_unions_summary_he.html): איך כוח עבודה מאורגן יכול להשפיע על מאבקים נגד נסיגה דמוקרטית. מחברות/מחברים: אסף בונדי.
+- [כשהוויכוח על הדמוקרטיה פוגש את הכלכלה](https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_reform_economy_summary_he.html): מה קורה לאמון משקיעים ולתפיסת סיכון בזמן משבר חוקתי. מחברות/מחברים: ארז כהן.
+- [נסיגה דמוקרטית ואלימות פוליטית: מה קורה לתודעה הציבורית?](https://tal69.github.io/hebrew-democracy-info/democracy_political_violence_summary_he.html): איך שחיקה במוסדות דמוקרטיים משפיעה על הצדקת אלימות פוליטית. מחברות/מחברים: טל שאנן, סיון הירש-הפלר, דפנה קנטי, יוליה אלעד-שטרנגר.
+- [למה הדמוקרטיה הישראלית נקלעה למשבר?](https://tal69.github.io/hebrew-democracy-info/democracy_israeli_democracy_crisis_summary_he.html): הסבר תמציתי למשבר הישראלי דרך קיטוב, מוסדות חלשים ותמריצים פוליטיים. מחברות/מחברים: נעם גדרון.
+- [מי תומך בנסיגה דמוקרטית, ולמה?](https://tal69.github.io/hebrew-democracy-info/democracy_masses_support_backsliding_summary_he.html): מחקר על התנאים שבהם אזרחים רגילים מוכנים לתמוך בפגיעה בכללי הדמוקרטיה. מחברות/מחברים: נעם גדרון, יותם מרגלית, ליאור שפר, איתמר יקיר.
+- [איך צעדים קטנים יכולים לשנות דמוקרטיה שלמה?](https://tal69.github.io/hebrew-democracy-info/democracy_judicial_overhaul_populist_picture_summary_he.html): ניתוח של הרפורמה המשפטית כחלק מדפוס רחב של החלשת בלמים מוסדיים. מחברות/מחברים: סוזי נבות.
+- [מה הקשר בין נסיגה דמוקרטית לזכויות נשים?](https://tal69.github.io/hebrew-democracy-info/democracy_gender_justice_backsliding_summary_he.html): מבט על זכויות נשים ושוויון מגדרי כסימן אזהרה לשחיקה דמוקרטית. מחברות/מחברים: רעות איצקוביץ'-מלכה.
+- [מה חוקי לאום עושים לתחושת השוויון של מיעוטים?](https://tal69.github.io/hebrew-democracy-info/democracy_majority_nationalism_equal_citizenship_summary_he.html): מחקר אמפירי על האופן שבו חוקי לאומיות רוב משפיעים על שוויון אזרחי של מיעוטים. מחברות/מחברים: נטע ברק-קורן, נעם גדרון, יובל פלדמן.
+- [האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה?](https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_moment_west_bank_summary_he.html): מבט על הקשר בין המשבר החוקתי בישראל לבין המציאות המשפטית והפוליטית בגדה המערבית. מחברות/מחברים: תמר הוסטובסקי ברנדס.
+
+## קבצים שימושיים לזחלנים ולמנועי AI
+
+- [מפת אתר](https://tal69.github.io/hebrew-democracy-info/sitemap.xml)
+- [מדיניות זחילה](https://tal69.github.io/hebrew-democracy-info/robots.txt)
+
+## הערות שימוש
+
+כל עמוד תמצית כולל קישור DOI או מקור יציב למאמר האקדמי שעליו הוא מבוסס. התמציות מיועדות להסבר ציבורי בעברית ואינן מחליפות את קריאת המאמר המקורי.
