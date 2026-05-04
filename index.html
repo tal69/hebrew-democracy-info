@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הנגשת מידע בנושאי דמוקרטיה</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #5f6368;
+      --accent: #16555d;
+      --accent-dark: #16404d;
+      --line: #d9e1e3;
+      --paper: #ffffff;
+      --page: #f5f7f8;
+      --link: #0563c1;
+      font-family: Arial, "Noto Sans Hebrew", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      direction: rtl;
+      text-align: right;
+      line-height: 1.65;
+      font-size: 18px;
+    }
+
+    main {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 56px;
+    }
+
+    header {
+      padding: 18px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--accent-dark);
+      font-size: 42px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    .item:hover,
+    .item:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .preview {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top center;
+      border-bottom: 1px solid var(--line);
+      background: #eef3f4;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 18px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 22px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .open {
+      margin-top: auto;
+      padding-top: 16px;
+      color: var(--link);
+      font-weight: 700;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .intro {
+        font-size: 18px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      main {
+        width: min(100% - 24px, 1080px);
+        padding-top: 26px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      .content {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>הנגשת מידע בנושאי דמוקרטיה</h1>
+      <p class="intro">שלוש תמציות בעברית לקהל הרחב, המבוססות על מאמרים אקדמיים בינלאומיים של חוקרים ישראלים.</p>
+    </header>
+
+    <section class="grid" aria-label="עמודי התמציות">
+      <a class="item" href="democracy_trade_unions_summary_he.html">
+        <img class="preview" src="html_qa/democracy_trade_unions_summary_he.png" alt="תצוגה מקדימה של התמצית על איגודי עובדים ודמוקרטיה">
+        <span class="content">
+          <h2>האם איגודי עובדים יכולים להגן על הדמוקרטיה?</h2>
+          <p class="summary">איך כוח עבודה מאורגן יכול להשפיע על מאבקים נגד נסיגה דמוקרטית.</p>
+          <span class="open">לקריאת העמוד</span>
+        </span>
+      </a>
+
+      <a class="item" href="democracy_constitutional_reform_economy_summary_he.html">
+        <img class="preview" src="html_qa/democracy_constitutional_reform_economy_summary_he.png" alt="תצוגה מקדימה של התמצית על דמוקרטיה וכלכלה">
+        <span class="content">
+          <h2>כשהוויכוח על הדמוקרטיה פוגש את הכלכלה</h2>
+          <p class="summary">מה קורה לאמון משקיעים ולתפיסת סיכון בזמן משבר חוקתי.</p>
+          <span class="open">לקריאת העמוד</span>
+        </span>
+      </a>
+
+      <a class="item" href="democracy_political_violence_summary_he.html">
+        <img class="preview" src="html_qa/democracy_political_violence_summary_he.png" alt="תצוגה מקדימה של התמצית על נסיגה דמוקרטית ואלימות פוליטית">
+        <span class="content">
+          <h2>נסיגה דמוקרטית ואלימות פוליטית: מה קורה לתודעה הציבורית?</h2>
+          <p class="summary">איך שחיקה במוסדות דמוקרטיים משפיעה על הצדקת אלימות פוליטית.</p>
+          <span class="open">לקריאת העמוד</span>
+        </span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
