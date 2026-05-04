@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>הנגשת מידע בנושאי דמוקרטיה</title>
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
   <style>
     :root {
       color-scheme: light;
@@ -72,6 +73,33 @@
       margin: 12px 0 0;
       color: var(--muted);
       font-size: 20px;
+    }
+
+    .search-panel {
+      margin-top: 24px;
+      max-width: 720px;
+      --pagefind-ui-scale: 0.92;
+      --pagefind-ui-primary: var(--accent);
+      --pagefind-ui-text: var(--ink);
+      --pagefind-ui-background: var(--paper);
+      --pagefind-ui-border: var(--line);
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 8px;
+      --pagefind-ui-image-border-radius: 6px;
+      --pagefind-ui-font: Arial, "Noto Sans Hebrew", "Segoe UI", sans-serif;
+    }
+
+    .search-panel .pagefind-ui {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .search-panel .pagefind-ui__form {
+      margin: 0;
+    }
+
+    .search-panel .pagefind-ui__search-input {
+      text-align: right;
     }
 
     .grid {
@@ -167,6 +195,7 @@
     </a>
       <h1>הנגשת מידע בנושאי דמוקרטיה</h1>
       <p class="intro">תמציות מאמרים אקדמיים של חוקרות וחוקרים ישראלים בנושאי דמוקרטיה ליברלית, זכויות, מוסדות ושלטון החוק</p>
+      <div class="search-panel" id="search" role="search" aria-label="חיפוש בתמציות"></div>
     </header>
 
     <section class="grid" aria-label="עמודי התמציות">
@@ -253,5 +282,27 @@
       </a>
     </section>
   </main>
+  <script src="pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      window.siteSearch = new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        showImages: false,
+        translations: {
+          placeholder: "חיפוש בתמציות",
+          clear_search: "ניקוי החיפוש",
+          load_more: "תוצאות נוספות",
+          search_label: "חיפוש באתר",
+          filters_label: "מסננים",
+          zero_results: "לא נמצאו תוצאות עבור [SEARCH_TERM]",
+          many_results: "[COUNT] תוצאות עבור [SEARCH_TERM]",
+          one_result: "תוצאה אחת עבור [SEARCH_TERM]",
+          alt_search: "לא נמצאו תוצאות עבור [SEARCH_TERM]. מוצגות תוצאות עבור [DIFFERENT_TERM]",
+          search_suggestion: "לא נמצאו תוצאות עבור [SEARCH_TERM]. כדאי לנסות את [DIFFERENT_TERM]"
+        }
+      });
+    });
+  </script>
 </body>
 </html>
