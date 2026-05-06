@@ -11,4 +11,4 @@
 11. Social media organizational account
 12. Add affiliation of the authors
 13. Automate mailing the authors to inform them about the publication of their articles and let them opt out.
-
+14. Check what we can do to make the website accessible for people with disabilities.

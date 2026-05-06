@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-05-07",
+  "imageSize": {
+    "width": 800,
+    "height": 600,
+    "format": "jpeg"
+  },
+  "purpose": "Internal catalog for selecting or reusing homepage paper graphics without re-analyzing image files.",
+  "reusePolicy": "Before generating a new graphic, compare the new paper topic with this catalog. Reuse an existing image only when the conceptual fit is strong and the image is not used by any of the newest 9 homepage cards. If no suitable image exists, generate a new polished editorial 4:3 image and convert it to 800x600 JPEG before committing. Update this catalog whenever an image is added or reused.",
+  "homepagePriorityPolicy": "On index.html, keep the first 3 preview images as width=800 height=600 decoding=async fetchpriority=high. Use width=800 height=600 loading=lazy decoding=async for the remaining preview images.",
+  "images": [
+    {
+      "file": "html_qa/democracy_legislative_backsliding_populism_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 1,
+      "primaryArticle": "democracy_legislative_backsliding_populism_summary_he.html",
+      "usedBy": [
+        "democracy_legislative_backsliding_populism_summary_he.html"
+      ],
+      "cardTitleHe": "איך מזהים נסיגה דמוקרטית בתוך תהליך החקיקה?",
+      "authorsHe": "אסנת עקירב",
+      "visualDescriptionHe": "איור על נסיגה חקיקתית, דיון בכנסת ופופוליזם סמכותני",
+      "semanticDescriptionHe": "איך מזהים נסיגה דמוקרטית בתוך תהליך החקיקה? איך הליך החקיקה עצמו יכול לחשוף שחיקה דמוקרטית עוד לפני שהנזק המוסדי מצטבר.",
+      "tags": [
+        "legislation",
+        "knesset",
+        "democratic-backsliding",
+        "populism"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_abusive_constitutionalism_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 2,
+      "primaryArticle": "democracy_abusive_constitutionalism_summary_he.html",
+      "usedBy": [
+        "democracy_abusive_constitutionalism_summary_he.html"
+      ],
+      "cardTitleHe": "מתי רפורמה משפטית הופכת לפגיעה בליבת הדמוקרטיה?",
+      "authorsHe": "יניב רוזנאי, רוזלינד דיקסון, דייוויד א' לנדאו",
+      "visualDescriptionHe": "איור על חוקתיות מנוצלת לרעה, בית משפט ואיזונים ובלמים",
+      "semanticDescriptionHe": "מתי רפורמה משפטית הופכת לפגיעה בליבת הדמוקרטיה? מתי רפורמה משפטית הופכת לאיום על הליבה הדמוקרטית של זכויות ואיזונים.",
+      "tags": [
+        "constitutionalism",
+        "courts",
+        "checks-and-balances",
+        "rule-of-law"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_constitutionalising_system_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 3,
+      "primaryArticle": "democracy_constitutionalising_system_summary_he.html",
+      "usedBy": [
+        "democracy_constitutionalising_system_summary_he.html"
+      ],
+      "cardTitleHe": "איך אפשר להפוך משבר חוקתי לחוקה דמוקרטית ומכלילה?",
+      "authorsHe": "מנאל תותרי-ג'ובראן",
+      "visualDescriptionHe": "איור על תהליך חוקתי מכליל, חוקה, שוויון וזכויות מיעוט",
+      "semanticDescriptionHe": "איך אפשר להפוך משבר חוקתי לחוקה דמוקרטית ומכלילה? איך משבר חוקתי יכול לפתוח תהליך דמוקרטי רחב יותר, שוויוני ומכליל.",
+      "tags": [
+        "constitution-making",
+        "equality",
+        "minority-rights",
+        "constitutional-crisis"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_first_brick_democratic_erosion_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 4,
+      "primaryArticle": "democracy_first_brick_democratic_erosion_summary_he.html",
+      "usedBy": [
+        "democracy_first_brick_democratic_erosion_summary_he.html"
+      ],
+      "cardTitleHe": "מתי צריך לעצור את הלבנה הראשונה בשחיקה דמוקרטית?",
+      "authorsHe": "תמר הוסטובסקי ברנדס, יניב רוזנאי",
+      "visualDescriptionHe": "איור על לבנה ראשונה בשחיקה דמוקרטית ובית משפט",
+      "semanticDescriptionHe": "מתי צריך לעצור את הלבנה הראשונה בשחיקה דמוקרטית? למה חשוב לזהות צעדים מוקדמים שמחלישים מוסדות דמוקרטיים לפני שהנזק מצטבר.",
+      "tags": [
+        "democratic-erosion",
+        "early-warning",
+        "courts",
+        "institutions"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_freedom_to_exclude_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 5,
+      "primaryArticle": "democracy_freedom_to_exclude_summary_he.html",
+      "usedBy": [
+        "democracy_freedom_to_exclude_summary_he.html"
+      ],
+      "cardTitleHe": "כשזכות הקניין הופכת לכלי להדרה",
+      "authorsHe": "מיכל טמיר",
+      "visualDescriptionHe": "איור על הדרה, שוויון וזכויות במרחב הציבורי",
+      "semanticDescriptionHe": "כשזכות הקניין הופכת לכלי להדרה. איך אפליה במרחב הפרטי יכולה לדחוק מיעוטים מן המרחב הציבורי.",
+      "tags": [
+        "exclusion",
+        "property-rights",
+        "equality",
+        "public-space"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_human_rights_conventions_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 6,
+      "primaryArticle": "democracy_human_rights_conventions_summary_he.html",
+      "usedBy": [
+        "democracy_human_rights_conventions_summary_he.html"
+      ],
+      "cardTitleHe": "איך אמנות זכויות אדם צריכות להשפיע על בתי המשפט בישראל?",
+      "authorsHe": "ברק מדינה",
+      "visualDescriptionHe": "איור על אמנות זכויות אדם, בתי משפט ושלטון החוק",
+      "semanticDescriptionHe": "איך אמנות זכויות אדם צריכות להשפיע על בתי המשפט בישראל? למה אמנות זכויות אדם צריכות לשמש אמת מידה גם בדין הישראלי.",
+      "tags": [
+        "human-rights",
+        "international-law",
+        "courts",
+        "rule-of-law"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_civil_society_ngos_backsliding_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 7,
+      "primaryArticle": "democracy_civil_society_ngos_backsliding_summary_he.html",
+      "usedBy": [
+        "democracy_civil_society_ngos_backsliding_summary_he.html"
+      ],
+      "cardTitleHe": "האם מתקפה על ארגוני חברה אזרחית מחלישה את הדמוקרטיה?",
+      "authorsHe": "אסיף אפרת, עומר יאיר",
+      "visualDescriptionHe": "איור על חברה אזרחית ונסיגה דמוקרטית",
+      "semanticDescriptionHe": "האם מתקפה על ארגוני חברה אזרחית מחלישה את הדמוקרטיה? איך עמדות ציבוריות כלפי עמותות יכולות לאפשר או לבלום פגיעה במרחב הדמוקרטי.",
+      "tags": [
+        "civil-society",
+        "ngos",
+        "public-opinion",
+        "democratic-backsliding"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_civil_servants_backsliding_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 8,
+      "primaryArticle": "democracy_civil_servants_backsliding_summary_he.html",
+      "usedBy": [
+        "democracy_civil_servants_backsliding_summary_he.html"
+      ],
+      "cardTitleHe": "מה קורה לשירות הציבורי כשהדמוקרטיה נשחקת?",
+      "authorsHe": "סער אלון-ברקת, שרון גלעד, ניר קוסטי, אילנה שפייזמן",
+      "visualDescriptionHe": "איור על שירות ציבורי ונסיגה דמוקרטית",
+      "semanticDescriptionHe": "מה קורה לשירות הציבורי כשהדמוקרטיה נשחקת? איך עובדי מדינה מגיבים כשהם מזהים איום על מוסדות הדמוקרטיה.",
+      "tags": [
+        "civil-service",
+        "bureaucracy",
+        "public-administration",
+        "democratic-backsliding"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_regime_classification_backsliding_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 9,
+      "primaryArticle": "democracy_regime_classification_backsliding_summary_he.html",
+      "usedBy": [
+        "democracy_regime_classification_backsliding_summary_he.html"
+      ],
+      "cardTitleHe": "האם נסיגה דמוקרטית היא רק ויכוח על בית המשפט?",
+      "authorsHe": "גל אריאלי",
+      "visualDescriptionHe": "איור על סיווג משטר ונסיגה דמוקרטית",
+      "semanticDescriptionHe": "האם נסיגה דמוקרטית היא רק ויכוח על בית המשפט? למה סיווג המשטר הישראלי משנה את האופן שבו מבינים את המשבר.",
+      "tags": [
+        "regime-classification",
+        "democratic-backsliding",
+        "political-science"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_trade_unions_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 10,
+      "primaryArticle": "democracy_trade_unions_summary_he.html",
+      "usedBy": [
+        "democracy_trade_unions_summary_he.html"
+      ],
+      "cardTitleHe": "האם איגודי עובדים יכולים להגן על הדמוקרטיה?",
+      "authorsHe": "אסף בונדי",
+      "visualDescriptionHe": "תצוגה מקדימה של התמצית על איגודי עובדים ודמוקרטיה",
+      "semanticDescriptionHe": "האם איגודי עובדים יכולים להגן על הדמוקרטיה? איך כוח עבודה מאורגן יכול להשפיע על מאבקים נגד נסיגה דמוקרטית.",
+      "tags": [
+        "trade-unions",
+        "labor",
+        "collective-action",
+        "democracy"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_constitutional_reform_economy_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 11,
+      "primaryArticle": "democracy_constitutional_reform_economy_summary_he.html",
+      "usedBy": [
+        "democracy_constitutional_reform_economy_summary_he.html"
+      ],
+      "cardTitleHe": "כשהוויכוח על הדמוקרטיה פוגש את הכלכלה",
+      "authorsHe": "ארז כהן",
+      "visualDescriptionHe": "תצוגה מקדימה של התמצית על דמוקרטיה וכלכלה",
+      "semanticDescriptionHe": "כשהוויכוח על הדמוקרטיה פוגש את הכלכלה. מה קורה לאמון משקיעים ולתפיסת סיכון בזמן משבר חוקתי.",
+      "tags": [
+        "economy",
+        "constitutional-reform",
+        "investor-confidence",
+        "institutions"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_political_violence_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 12,
+      "primaryArticle": "democracy_political_violence_summary_he.html",
+      "usedBy": [
+        "democracy_political_violence_summary_he.html"
+      ],
+      "cardTitleHe": "נסיגה דמוקרטית ואלימות פוליטית: מה קורה לתודעה הציבורית?",
+      "authorsHe": "טל שאנן, סיון הירש-הפלר, דפנה קנטי, יוליה אלעד-שטרנגר",
+      "visualDescriptionHe": "תצוגה מקדימה של התמצית על נסיגה דמוקרטית ואלימות פוליטית",
+      "semanticDescriptionHe": "נסיגה דמוקרטית ואלימות פוליטית: מה קורה לתודעה הציבורית? איך שחיקה במוסדות דמוקרטיים משפיעה על הצדקת אלימות פוליטית.",
+      "tags": [
+        "political-violence",
+        "public-opinion",
+        "democratic-backsliding",
+        "polarization"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_israeli_democracy_crisis_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 13,
+      "primaryArticle": "democracy_israeli_democracy_crisis_summary_he.html",
+      "usedBy": [
+        "democracy_israeli_democracy_crisis_summary_he.html"
+      ],
+      "cardTitleHe": "למה הדמוקרטיה הישראלית נקלעה למשבר?",
+      "authorsHe": "נעם גדרון",
+      "visualDescriptionHe": "איור על משבר בדמוקרטיה הישראלית",
+      "semanticDescriptionHe": "למה הדמוקרטיה הישראלית נקלעה למשבר? הסבר תמציתי למשבר הישראלי דרך קיטוב, מוסדות חלשים ותמריצים פוליטיים.",
+      "tags": [
+        "israeli-democracy",
+        "crisis",
+        "polarization",
+        "institutions"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_masses_support_backsliding_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 14,
+      "primaryArticle": "democracy_masses_support_backsliding_summary_he.html",
+      "usedBy": [
+        "democracy_masses_support_backsliding_summary_he.html"
+      ],
+      "cardTitleHe": "מי תומך בנסיגה דמוקרטית, ולמה?",
+      "authorsHe": "נעם גדרון, יותם מרגלית, ליאור שפר, איתמר יקיר",
+      "visualDescriptionHe": "איור על תמיכה ציבורית בנסיגה דמוקרטית",
+      "semanticDescriptionHe": "מי תומך בנסיגה דמוקרטית, ולמה? מחקר על התנאים שבהם אזרחים רגילים מוכנים לתמוך בפגיעה בכללי הדמוקרטיה.",
+      "tags": [
+        "public-support",
+        "mass-politics",
+        "democratic-backsliding",
+        "survey-research"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_judicial_overhaul_populist_picture_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 15,
+      "primaryArticle": "democracy_judicial_overhaul_populist_picture_summary_he.html",
+      "usedBy": [
+        "democracy_judicial_overhaul_populist_picture_summary_he.html"
+      ],
+      "cardTitleHe": "איך צעדים קטנים יכולים לשנות דמוקרטיה שלמה?",
+      "authorsHe": "סוזי נבות",
+      "visualDescriptionHe": "איור על הרפורמה המשפטית ודפוס פופוליסטי רחב",
+      "semanticDescriptionHe": "איך צעדים קטנים יכולים לשנות דמוקרטיה שלמה? ניתוח של הרפורמה המשפטית כחלק מדפוס רחב של החלשת בלמים מוסדיים.",
+      "tags": [
+        "judicial-overhaul",
+        "populism",
+        "courts",
+        "institutional-checks"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_gender_justice_backsliding_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 16,
+      "primaryArticle": "democracy_gender_justice_backsliding_summary_he.html",
+      "usedBy": [
+        "democracy_gender_justice_backsliding_summary_he.html"
+      ],
+      "cardTitleHe": "מה הקשר בין נסיגה דמוקרטית לזכויות נשים?",
+      "authorsHe": "רעות איצקוביץ'-מלכה",
+      "visualDescriptionHe": "איור על צדק מגדרי ונסיגה דמוקרטית",
+      "semanticDescriptionHe": "מה הקשר בין נסיגה דמוקרטית לזכויות נשים? מבט על זכויות נשים ושוויון מגדרי כסימן אזהרה לשחיקה דמוקרטית.",
+      "tags": [
+        "gender-justice",
+        "women-rights",
+        "equality",
+        "democratic-backsliding"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_majority_nationalism_equal_citizenship_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 17,
+      "primaryArticle": "democracy_majority_nationalism_equal_citizenship_summary_he.html",
+      "usedBy": [
+        "democracy_majority_nationalism_equal_citizenship_summary_he.html"
+      ],
+      "cardTitleHe": "מה חוקי לאום עושים לתחושת השוויון של מיעוטים?",
+      "authorsHe": "נטע ברק-קורן, נעם גדרון, יובל פלדמן",
+      "visualDescriptionHe": "איור על לאומיות רוב ושוויון אזרחי של מיעוטים",
+      "semanticDescriptionHe": "מה חוקי לאום עושים לתחושת השוויון של מיעוטים? מחקר אמפירי על האופן שבו חוקי לאומיות רוב משפיעים על שוויון אזרחי של מיעוטים.",
+      "tags": [
+        "majority-nationalism",
+        "minority-rights",
+        "equal-citizenship",
+        "nation-state"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    },
+    {
+      "file": "html_qa/democracy_constitutional_moment_west_bank_summary_he.jpg",
+      "width": 800,
+      "height": 600,
+      "currentHomepagePosition": 18,
+      "primaryArticle": "democracy_constitutional_moment_west_bank_summary_he.html",
+      "usedBy": [
+        "democracy_constitutional_moment_west_bank_summary_he.html"
+      ],
+      "cardTitleHe": "האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה?",
+      "authorsHe": "תמר הוסטובסקי ברנדס",
+      "visualDescriptionHe": "איור על רפורמה חוקתית והגדה המערבית",
+      "semanticDescriptionHe": "האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה? מבט על הקשר בין המשבר החוקתי בישראל לבין המציאות המשפטית והפוליטית בגדה המערבית.",
+      "tags": [
+        "constitutional-reform",
+        "west-bank",
+        "occupation",
+        "rule-of-law"
+      ],
+      "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
+      "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
+    }
+  ]
+}
