@@ -1,5 +1,5 @@
 1. Domain under tau.ac.il
-2. Add contact us, about us pages
+2. Add contact us, about us pages.  We will need a tau.ac.il mailbox for contact purposes.
 3. Traffic analytics
 4. Links to the author's home pages / add info about authors
 5. Increase search engine visibility
