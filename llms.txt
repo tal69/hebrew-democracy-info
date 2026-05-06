@@ -6,6 +6,9 @@
 
 ## תוכן האתר
 
+- [איך מזהים נסיגה דמוקרטית בתוך תהליך החקיקה?](https://tal69.github.io/hebrew-democracy-info/democracy_legislative_backsliding_populism_summary_he.html): איך הליך החקיקה עצמו יכול לחשוף שחיקה דמוקרטית עוד לפני שהנזק המוסדי מצטבר. מחברות/מחברים: אסנת עקירב.
+- [מתי רפורמה משפטית הופכת לפגיעה בליבת הדמוקרטיה?](https://tal69.github.io/hebrew-democracy-info/democracy_abusive_constitutionalism_summary_he.html): מתי רפורמה משפטית הופכת לאיום על הליבה הדמוקרטית של זכויות ואיזונים. מחברות/מחברים: יניב רוזנאי, רוזלינד דיקסון, דייוויד א' לנדאו.
+- [איך אפשר להפוך משבר חוקתי לחוקה דמוקרטית ומכלילה?](https://tal69.github.io/hebrew-democracy-info/democracy_constitutionalising_system_summary_he.html): איך משבר חוקתי יכול לפתוח תהליך דמוקרטי רחב יותר, שוויוני ומכליל. מחברות/מחברים: מנאל תותרי-ג'ובראן.
 - [מתי צריך לעצור את הלבנה הראשונה בשחיקה דמוקרטית?](https://tal69.github.io/hebrew-democracy-info/democracy_first_brick_democratic_erosion_summary_he.html): למה חשוב לזהות צעדים מוקדמים שמחלישים מוסדות דמוקרטיים לפני שהנזק מצטבר. מחברות/מחברים: תמר הוסטובסקי ברנדס, יניב רוזנאי.
 - [כשזכות הקניין הופכת לכלי להדרה](https://tal69.github.io/hebrew-democracy-info/democracy_freedom_to_exclude_summary_he.html): איך אפליה במרחב הפרטי יכולה לדחוק מיעוטים מן המרחב הציבורי. מחברות/מחברים: מיכל טמיר.
 - [איך אמנות זכויות אדם צריכות להשפיע על בתי המשפט בישראל?](https://tal69.github.io/hebrew-democracy-info/democracy_human_rights_conventions_summary_he.html): למה אמנות זכויות אדם צריכות לשמש אמת מידה גם בדין הישראלי. מחברות/מחברים: ברק מדינה.
