@@ -101,6 +101,25 @@
 
     * { box-sizing: border-box; }
 
+    .skip-link {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+      padding: 10px 14px;
+      background: #ffffff;
+      color: #0563c1;
+      border: 2px solid #16555d;
+      border-radius: 4px;
+      font-weight: 700;
+      transform: translateY(-140%);
+      transition: transform 120ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
     body {
       margin: 0;
       background: var(--page);
@@ -214,6 +233,24 @@
       font-size: 16px;
     }
 
+    .footer-links {
+      margin-top: 30px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: #666;
+      font-size: 15px;
+    }
+
+    .footer-links a {
+      color: #0563c1;
+      font-weight: 700;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
     @media (max-width: 640px) {
       body { font-size: 16px; }
       main { width: 100%; margin: 0; padding: 28px 20px; border-width: 0; }
@@ -229,7 +266,8 @@
   </style>
 </head>
 <body>
-  <main data-pagefind-body>
+  <a class="skip-link" href="#main-content">דילוג לתוכן המרכזי</a>
+  <main id="main-content" tabindex="-1" data-pagefind-body>
     <a class="logo-link" href="https://www.tau.ac.il/" aria-label="אתר אוניברסיטת תל אביב" data-pagefind-ignore target="_blank" rel="noopener noreferrer">
       <img class="site-logo" src="HEB_bold.jpg" alt="לוגו אוניברסיטת תל אביב">
     </a>
@@ -302,6 +340,9 @@
       </section>
 
     <p class="note">הערת קריאה: התמצית נועדה להנגיש את עיקרי המאמר לקהל הרחב ואינה מחליפה קריאה אקדמית מלאה.</p>
+    <footer class="footer-links" data-pagefind-ignore>
+      <a href="accessibility.html">הצהרת נגישות</a>
+    </footer>
   </main>
   <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ce86138e8d17417db1b5cb824d2d3c86"}'></script><!-- End Cloudflare Web Analytics -->
 </body>

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הצהרת נגישות | הנגשת מידע בנושאי דמוקרטיה</title>
+  <meta name="description" content="הצהרת נגישות לאתר הנגשת מידע בנושאי דמוקרטיה, כולל רמת התאמה מכוונת, התאמות שבוצעו ודרכי טיפול בפניות נגישות.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tal69.github.io/hebrew-democracy-info/accessibility.html">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:site_name" content="הנגשת מידע בנושאי דמוקרטיה">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="הצהרת נגישות | הנגשת מידע בנושאי דמוקרטיה">
+  <meta property="og:description" content="מידע על התאמות נגישות באתר, רמת ההתאמה המכוונת ודרכי טיפול בפניות נגישות.">
+  <meta property="og:url" content="https://tal69.github.io/hebrew-democracy-info/accessibility.html">
+  <meta property="og:image" content="https://tal69.github.io/hebrew-democracy-info/HEB_bold.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="הצהרת נגישות | הנגשת מידע בנושאי דמוקרטיה">
+  <meta name="twitter:description" content="מידע על התאמות נגישות באתר, רמת ההתאמה המכוונת ודרכי טיפול בפניות נגישות.">
+  <meta name="twitter:image" content="https://tal69.github.io/hebrew-democracy-info/HEB_bold.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "הצהרת נגישות | הנגשת מידע בנושאי דמוקרטיה",
+    "description": "הצהרת נגישות לאתר הנגשת מידע בנושאי דמוקרטיה.",
+    "inLanguage": "he",
+    "url": "https://tal69.github.io/hebrew-democracy-info/accessibility.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "הנגשת מידע בנושאי דמוקרטיה",
+      "url": "https://tal69.github.io/hebrew-democracy-info/"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202124;
+      --muted: #666;
+      --accent: #16555d;
+      --accent-dark: #16404d;
+      --rule: #d9e1e3;
+      --paper: #fff;
+      --page: #f5f7f8;
+      font-family: Arial, "Noto Sans Hebrew", "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    .skip-link {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+      padding: 10px 14px;
+      background: #ffffff;
+      color: #0563c1;
+      border: 2px solid #16555d;
+      border-radius: 4px;
+      font-weight: 700;
+      transform: translateY(-140%);
+      transition: transform 120ms ease;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      direction: rtl;
+      text-align: right;
+      line-height: 1.65;
+      font-size: 18px;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: 48px 56px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+    }
+
+    .logo-link {
+      display: block;
+      width: min(260px, 70vw);
+      margin: 0 0 28px auto;
+    }
+
+    .site-logo {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 20px;
+      color: #0563c1;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .home-link:hover { text-decoration: underline; }
+
+    .home-icon {
+      width: 19px;
+      height: 19px;
+      flex: 0 0 auto;
+    }
+
+    h1, h2, p, li { direction: rtl; text-align: right; }
+
+    h1 {
+      margin: 0 0 18px;
+      color: var(--accent-dark);
+      font-size: 34px;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    h2 {
+      margin: 26px 0 8px;
+      color: var(--accent);
+      font-size: 25px;
+      line-height: 1.3;
+    }
+
+    p { margin: 0 0 10px; }
+    ul { margin: 0 0 12px; padding: 0 22px 0 0; }
+    li { margin: 0 0 6px; }
+
+    a { color: #0563c1; text-decoration: underline; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    .updated {
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .notice {
+      margin: 22px 0;
+      padding: 16px 18px;
+      background: #eef3f4;
+      border-right: 4px solid var(--accent);
+    }
+
+    .footer-links {
+      margin-top: 30px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: #666;
+      font-size: 15px;
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      main { width: 100%; margin: 0; padding: 28px 20px; border-width: 0; }
+      h1 { font-size: 28px; }
+      h2 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">דילוג לתוכן המרכזי</a>
+  <main id="main-content" tabindex="-1" data-pagefind-body>
+    <a class="logo-link" href="https://www.tau.ac.il/" aria-label="אתר אוניברסיטת תל אביב" data-pagefind-ignore target="_blank" rel="noopener noreferrer">
+      <img class="site-logo" src="HEB_bold.jpg" alt="לוגו אוניברסיטת תל אביב">
+    </a>
+    <a class="home-link" href="index.html" aria-label="חזרה לעמוד הבית" data-pagefind-ignore>
+      <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11.5 12 4l9 7.5"></path>
+        <path d="M5 10.5V20h5v-6h4v6h5v-9.5"></path>
+      </svg>
+      <span>לעמוד הבית</span>
+    </a>
+
+    <h1>הצהרת נגישות</h1>
+    <p class="updated">עודכן לאחרונה: 7 במאי 2026</p>
+
+    <p>אתר "הנגשת מידע בנושאי דמוקרטיה" נועד להנגיש לציבור הרחב תמציות בעברית של מאמרים אקדמיים. אנו פועלים לשפר את נגישות האתר כך שיהיה ניתן לשימוש נוח ככל האפשר גם באמצעות מקלדת, קוראי מסך, הגדלת טקסט וטכנולוגיות מסייעות.</p>
+
+    <div class="notice">
+      <p>רמת ההתאמה המכוונת היא WCAG 2.2 ברמה AA, תוך התייחסות לתקן הישראלי ת"י 5568. הצהרה זו אינה חוות דעת משפטית או אישור של מומחה נגישות מוסמך.</p>
+    </div>
+
+    <section>
+      <h2>התאמות נגישות שבוצעו באתר</h2>
+      <ul>
+        <li>מבנה HTML סמנטי, כולל כותרת ראשית אחת בכל עמוד וכותרות משנה לפי סדר הגיוני.</li>
+        <li>הגדרת שפה וכיוון כתיבה בעברית בכל עמוד באמצעות <span dir="ltr">lang="he"</span> ו-<span dir="ltr">dir="rtl"</span>.</li>
+        <li>קישור "דילוג לתוכן המרכזי" בתחילת כל עמוד עבור ניווט מקלדת וקוראי מסך.</li>
+        <li>סימוני מיקוד ברורים לקישורים ולכרטיסים בזמן ניווט מקלדת.</li>
+        <li>טקסט חלופי לתמונות ולאיורים המרכזיים באתר.</li>
+        <li>קישורים חיצוניים מוגדרים לפתיחה בלשונית חדשה ומסומנים בקוד באופן עקבי.</li>
+        <li>תמיכה בפריסת מסך צר והגדלת טקסט באמצעות עיצוב רספונסיבי.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>בדיקות שבוצעו</h2>
+      <p>בוצעו בדיקות קוד בסיסיות לכל עמודי האתר: קיום יעד לקישורים פנימיים ולתמונות, תקינות JSON-LD, תגיות Open Graph, וקיום סקריפט אנליטיקה יחיד בכל עמוד.</p>
+      <p>בנוסף, יש לבצע בהמשך בדיקה ידנית עם מקלדת בלבד, בדיקה עם קורא מסך כגון VoiceOver או NVDA, ובדיקת ניגודיות מלאה באמצעות כלי ייעודי כגון Lighthouse, WAVE או axe DevTools.</p>
+    </section>
+
+    <section>
+      <h2>מגבלות ידועות</h2>
+      <p>ייתכן שחלקים מסוימים באתר עדיין אינם עומדים בכל דרישות WCAG 2.2 AA, במיוחד בנושאים המחייבים בדיקה ידנית עם טכנולוגיות מסייעות. האתר משתפר בהדרגה במסגרת התחזוקה השוטפת.</p>
+      <p>יש להוסיף פרטי קשר ציבוריים ייעודיים לפניות נגישות, רצוי כתובת דוא"ל מוסדית או תיבת דוא"ל ייעודית לאתר.</p>
+    </section>
+
+    <section>
+      <h2>פנייה בנושא נגישות</h2>
+      <p>אם נתקלתם בבעיית נגישות באתר, מומלץ לציין את כתובת העמוד, תיאור הבעיה, הדפדפן או המכשיר שבו השתמשתם, והטכנולוגיה המסייעת אם רלוונטי.</p>
+      <p>פרטי קשר ייעודיים לפניות נגישות יתווספו לאחר בחירת כתובת ציבורית מתאימה.</p>
+    </section>
+
+    <footer class="footer-links" data-pagefind-ignore>
+      <a href="index.html">חזרה לעמוד הבית</a>
+    </footer>
+  </main>
+  <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ce86138e8d17417db1b5cb824d2d3c86"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

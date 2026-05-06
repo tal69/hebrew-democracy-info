@@ -6,6 +6,9 @@
 
 ## תוכן האתר
 
+- [למה הרפורמה המשפטית היא פרויקט חוקתי פופוליסטי?](https://tal69.github.io/hebrew-democracy-info/democracy_populist_constitutionalism_overhaul_summary_he.html): איך פופוליזם יכול להפוך רפורמה משפטית לאיום על בלמים, זכויות ושלטון החוק. מחברות/מחברים: יניב רוזנאי, עמיחי כהן.
+- [מה הרפורמה המשפטית מלמדת על זהות ושוויון אזרחי?](https://tal69.github.io/hebrew-democracy-info/democracy_national_identity_equal_citizenship_summary_he.html): איך מאבק על בית המשפט משקף שינוי עמוק בזהות החוקתית ובשאלת השוויון. מחברות/מחברים: ברק מדינה, עפרה בלוך.
+- [איך ההבטחה החוקתית בישראל נסוגה במקום להעמיק זכויות?](https://tal69.github.io/hebrew-democracy-info/democracy_promise_retrenchment_constitutionalism_summary_he.html): איך התחזקות הביקורת השיפוטית לוותה בהתנגדות פוליטית, פופוליזם ושחיקת זכויות. מחברות/מחברים: אדם שנער, ברק מדינה, גילה שטופלר.
 - [איך מזהים נסיגה דמוקרטית בתוך תהליך החקיקה?](https://tal69.github.io/hebrew-democracy-info/democracy_legislative_backsliding_populism_summary_he.html): איך הליך החקיקה עצמו יכול לחשוף שחיקה דמוקרטית עוד לפני שהנזק המוסדי מצטבר. מחברות/מחברים: אסנת עקירב.
 - [מתי רפורמה משפטית הופכת לפגיעה בליבת הדמוקרטיה?](https://tal69.github.io/hebrew-democracy-info/democracy_abusive_constitutionalism_summary_he.html): מתי רפורמה משפטית הופכת לאיום על הליבה הדמוקרטית של זכויות ואיזונים. מחברות/מחברים: יניב רוזנאי, רוזלינד דיקסון, דייוויד א' לנדאו.
 - [איך אפשר להפוך משבר חוקתי לחוקה דמוקרטית ומכלילה?](https://tal69.github.io/hebrew-democracy-info/democracy_constitutionalising_system_summary_he.html): איך משבר חוקתי יכול לפתוח תהליך דמוקרטי רחב יותר, שוויוני ומכליל. מחברות/מחברים: מנאל תותרי-ג'ובראן.
@@ -26,6 +29,8 @@
 - [האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה?](https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_moment_west_bank_summary_he.html): מבט על הקשר בין המשבר החוקתי בישראל לבין המציאות המשפטית והפוליטית בגדה המערבית. מחברות/מחברים: תמר הוסטובסקי ברנדס.
 
 ## קבצים שימושיים לזחלנים ולמנועי AI
+
+- [הצהרת נגישות](https://tal69.github.io/hebrew-democracy-info/accessibility.html)
 
 - [מפת אתר](https://tal69.github.io/hebrew-democracy-info/sitemap.xml)
 - [מדיניות זחילה](https://tal69.github.io/hebrew-democracy-info/robots.txt)
