@@ -4,6 +4,14 @@
 
 אתר עברי המרכז תמציות נגישות לקהל הרחב של מאמרים אקדמיים מאת חוקרות וחוקרים ישראלים בנושאי דמוקרטיה ליברלית, זכויות, מוסדות ושלטון החוק.
 
+## נושאים מרכזיים
+
+- [חוקתיות, בתי משפט ושלטון החוק](https://tal69.github.io/hebrew-democracy-info/topics/constitutionalism-courts-rule-of-law.html): מאמרים על ביקורת שיפוטית, רפורמות חוקתיות, איזונים ובלמים והגנה מוסדית על זכויות.
+- [נסיגה דמוקרטית ופופוליזם](https://tal69.github.io/hebrew-democracy-info/topics/democratic-backsliding-populism.html): מאמרים על שחיקת מוסדות, פופוליזם סמכותני, משברים משטריים והצטברות צעדים שמחלישים דמוקרטיה.
+- [זכויות, שוויון ומיעוטים](https://tal69.github.io/hebrew-democracy-info/topics/rights-equality-minorities.html): מאמרים על זכויות אדם, שוויון אזרחי, הדרה, מגדר, מיעוטים והקשר בין זכויות לבין דמוקרטיה ליברלית.
+- [מוסדות, חברה אזרחית ושירות ציבורי](https://tal69.github.io/hebrew-democracy-info/topics/institutions-civil-society-public-service.html): מאמרים על כנסת, שירות ציבורי, עמותות, איגודי עובדים, כלכלה ומנגנוני פעולה קולקטיבית בדמוקרטיה.
+- [דעת קהל, קיטוב ואלימות פוליטית](https://tal69.github.io/hebrew-democracy-info/topics/public-opinion-polarization-violence.html): מאמרים על עמדות ציבוריות, תמיכה בנסיגה דמוקרטית, קיטוב, זהות פוליטית והצדקת אלימות פוליטית.
+
 ## תוכן האתר
 
 - [למה הרפורמה המשפטית היא פרויקט חוקתי פופוליסטי?](https://tal69.github.io/hebrew-democracy-info/democracy_populist_constitutionalism_overhaul_summary_he.html): איך פופוליזם יכול להפוך רפורמה משפטית לאיום על בלמים, זכויות ושלטון החוק. מחברות/מחברים: יניב רוזנאי, עמיחי כהן.
@@ -31,10 +39,9 @@
 ## קבצים שימושיים לזחלנים ולמנועי AI
 
 - [הצהרת נגישות](https://tal69.github.io/hebrew-democracy-info/accessibility.html)
-
 - [מפת אתר](https://tal69.github.io/hebrew-democracy-info/sitemap.xml)
 - [מדיניות זחילה](https://tal69.github.io/hebrew-democracy-info/robots.txt)
 
 ## הערות שימוש
 
-כל עמוד תמצית כולל קישור DOI או מקור יציב למאמר האקדמי שעליו הוא מבוסס. התמציות מיועדות להסבר ציבורי בעברית ואינן מחליפות את קריאת המאמר המקורי.
+כל עמוד תמצית כולל קישור DOI או מקור יציב למאמר האקדמי שעליו הוא מבוסס. התמציות מיועדות להסבר ציבורי בעברית ואינן מחליפות את קריאת המאמר המקורי. מאמר יכול להופיע ביותר מנושא מרכזי אחד כאשר הוא רלוונטי לכמה שאלות מחקר.

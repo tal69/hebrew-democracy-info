@@ -179,6 +179,27 @@
     .meta-label { font-weight: 700; }
     .meta-value { unicode-bidi: plaintext; }
 
+
+    .topic-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 12px;
+      align-items: baseline;
+      margin: -8px 0 28px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .topic-label {
+      font-weight: 700;
+      color: var(--accent-dark);
+    }
+
+    .topic-links a {
+      color: #0563c1;
+      font-weight: 700;
+    }
+
     .latin {
       direction: ltr;
       unicode-bidi: embed;
@@ -290,6 +311,13 @@
           <a class="meta-value latin" dir="ltr" href="https://doi.org/10.1353/jod.2023.a900431" target="_blank" rel="noopener noreferrer">https://doi.org/10.1353/jod.2023.a900431</a>
         </div>
     </div>
+
+    <nav class="topic-links" aria-label="נושאים">
+      <span class="topic-label">נושאים:</span>
+      <a href="topics/democratic-backsliding-populism.html">נסיגה ופופוליזם</a>,
+      <a href="topics/institutions-civil-society-public-service.html">מוסדות וחברה אזרחית</a>,
+      <a href="topics/public-opinion-polarization-violence.html">דעת קהל וקיטוב</a>
+    </nav>
 
     <p class="one-liner">שורה תחתונה: המאמר מסביר את המשבר הישראלי לא כאירוע יחיד, אלא כתוצאה של שילוב בין קיטוב פוליטי עמוק, מבנה מוסדי פגיע ומאבק על גבולות הכוח השלטוני. </p>
 

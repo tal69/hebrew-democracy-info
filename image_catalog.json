@@ -408,5 +408,96 @@
       "reuseGuidance": "אפשר לעשות שימוש חוזר כאשר מאמר חדש עוסק באותם מוסדות, זכויות, קבוצה חברתית או דפוס שחיקה דמוקרטית, ובתנאי שהתמונה אינה מופיעה בתשעת הכרטיסים הראשונים בעמוד הבית.",
       "qualityNotes": "איור עריכתי מלוטש בסגנון הקיים: 4:3, גווני שמנת ואוכרה, נגיעות טורקיז/כחול עמוק, ללא טקסט או שכבות ממשק."
     }
+  ],
+  "topicGraphics": [
+    {
+      "file": "html_qa/topic_constitutionalism_courts_rule_of_law.jpg",
+      "width": 800,
+      "height": 600,
+      "topicId": "constitutionalism-courts-rule-of-law",
+      "topicPage": "topics/constitutionalism-courts-rule-of-law.html",
+      "titleHe": "חוקתיות, בתי משפט ושלטון החוק",
+      "visualDescriptionHe": "איור נושא על בית משפט, מאזניים, חוקתיות ושלטון החוק",
+      "semanticDescriptionHe": "מאמרים על ביקורת שיפוטית, רפורמות חוקתיות, איזונים ובלמים והגנה מוסדית על זכויות.",
+      "tags": [
+        "חוקתיות",
+        "בתי משפט",
+        "שלטון החוק",
+        "איזונים ובלמים",
+        "ביקורת שיפוטית"
+      ],
+      "qualityNotes": "גרפיקת נושא כללית ב-4:3, בגווני שמנת/אוכרה עם נגיעות טורקיז וכחול עמוק, ללא טקסט או לוגו."
+    },
+    {
+      "file": "html_qa/topic_democratic_backsliding_populism.jpg",
+      "width": 800,
+      "height": 600,
+      "topicId": "democratic-backsliding-populism",
+      "topicPage": "topics/democratic-backsliding-populism.html",
+      "titleHe": "נסיגה דמוקרטית ופופוליזם",
+      "visualDescriptionHe": "איור נושא על נסיגה דמוקרטית, מוסדות מוחלשים ופופוליזם",
+      "semanticDescriptionHe": "מאמרים על שחיקת מוסדות, פופוליזם סמכותני, משברים משטריים והצטברות צעדים שמחלישים דמוקרטיה.",
+      "tags": [
+        "נסיגה דמוקרטית",
+        "פופוליזם",
+        "משבר דמוקרטי",
+        "שחיקת מוסדות"
+      ],
+      "qualityNotes": "גרפיקת נושא כללית ב-4:3, בגווני שמנת/אוכרה עם נגיעות טורקיז וכחול עמוק, ללא טקסט או לוגו."
+    },
+    {
+      "file": "html_qa/topic_rights_equality_minorities.jpg",
+      "width": 800,
+      "height": 600,
+      "topicId": "rights-equality-minorities",
+      "topicPage": "topics/rights-equality-minorities.html",
+      "titleHe": "זכויות, שוויון ומיעוטים",
+      "visualDescriptionHe": "איור נושא על זכויות, שוויון אזרחי ומיעוטים במרחב ציבורי",
+      "semanticDescriptionHe": "מאמרים על זכויות אדם, שוויון אזרחי, הדרה, מגדר, מיעוטים והקשר בין זכויות לבין דמוקרטיה ליברלית.",
+      "tags": [
+        "זכויות אדם",
+        "שוויון",
+        "מיעוטים",
+        "הדרה",
+        "מגדר"
+      ],
+      "qualityNotes": "גרפיקת נושא כללית ב-4:3, בגווני שמנת/אוכרה עם נגיעות טורקיז וכחול עמוק, ללא טקסט או לוגו."
+    },
+    {
+      "file": "html_qa/topic_institutions_civil_society_public_service.jpg",
+      "width": 800,
+      "height": 600,
+      "topicId": "institutions-civil-society-public-service",
+      "topicPage": "topics/institutions-civil-society-public-service.html",
+      "titleHe": "מוסדות, חברה אזרחית ושירות ציבורי",
+      "visualDescriptionHe": "איור נושא על מוסדות ציבור, חברה אזרחית ורשת של פעולה קולקטיבית",
+      "semanticDescriptionHe": "מאמרים על כנסת, שירות ציבורי, עמותות, איגודי עובדים, כלכלה ומנגנוני פעולה קולקטיבית בדמוקרטיה.",
+      "tags": [
+        "מוסדות",
+        "חברה אזרחית",
+        "שירות ציבורי",
+        "איגודי עובדים",
+        "כלכלה פוליטית"
+      ],
+      "qualityNotes": "גרפיקת נושא כללית ב-4:3, בגווני שמנת/אוכרה עם נגיעות טורקיז וכחול עמוק, ללא טקסט או לוגו."
+    },
+    {
+      "file": "html_qa/topic_public_opinion_polarization_violence.jpg",
+      "width": 800,
+      "height": 600,
+      "topicId": "public-opinion-polarization-violence",
+      "topicPage": "topics/public-opinion-polarization-violence.html",
+      "titleHe": "דעת קהל, קיטוב ואלימות פוליטית",
+      "visualDescriptionHe": "איור נושא על דעת קהל, קיטוב ואלימות פוליטית",
+      "semanticDescriptionHe": "מאמרים על עמדות ציבוריות, תמיכה בנסיגה דמוקרטית, קיטוב, זהות פוליטית והצדקת אלימות פוליטית.",
+      "tags": [
+        "דעת קהל",
+        "קיטוב",
+        "אלימות פוליטית",
+        "תמיכה ציבורית",
+        "זהות פוליטית"
+      ],
+      "qualityNotes": "גרפיקת נושא כללית ב-4:3, בגווני שמנת/אוכרה עם נגיעות טורקיז וכחול עמוק, ללא טקסט או לוגו."
+    }
   ]
 }
