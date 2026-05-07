@@ -14,7 +14,7 @@
       "file": "html_qa/democracy_legislative_backsliding_populism_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 4,
+      "currentHomepagePosition": 7,
       "primaryArticle": "democracy_legislative_backsliding_populism_summary_he.html",
       "usedBy": [
         "democracy_legislative_backsliding_populism_summary_he.html"
@@ -36,7 +36,7 @@
       "file": "html_qa/democracy_abusive_constitutionalism_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 5,
+      "currentHomepagePosition": 8,
       "primaryArticle": "democracy_abusive_constitutionalism_summary_he.html",
       "usedBy": [
         "democracy_abusive_constitutionalism_summary_he.html"
@@ -58,7 +58,7 @@
       "file": "html_qa/democracy_constitutionalising_system_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 6,
+      "currentHomepagePosition": 9,
       "primaryArticle": "democracy_constitutionalising_system_summary_he.html",
       "usedBy": [
         "democracy_constitutionalising_system_summary_he.html"
@@ -80,7 +80,7 @@
       "file": "html_qa/democracy_first_brick_democratic_erosion_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 7,
+      "currentHomepagePosition": 10,
       "primaryArticle": "democracy_first_brick_democratic_erosion_summary_he.html",
       "usedBy": [
         "democracy_first_brick_democratic_erosion_summary_he.html"
@@ -102,10 +102,11 @@
       "file": "html_qa/democracy_freedom_to_exclude_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 8,
+      "currentHomepagePosition": 3,
       "primaryArticle": "democracy_freedom_to_exclude_summary_he.html",
       "usedBy": [
-        "democracy_freedom_to_exclude_summary_he.html"
+        "democracy_freedom_to_exclude_summary_he.html",
+        "democracy_nationality_basic_law_majority_summary_he.html"
       ],
       "cardTitleHe": "כשזכות הקניין הופכת לכלי להדרה",
       "authorsHe": "מיכל טמיר",
@@ -124,10 +125,11 @@
       "file": "html_qa/democracy_human_rights_conventions_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 9,
+      "currentHomepagePosition": 1,
       "primaryArticle": "democracy_human_rights_conventions_summary_he.html",
       "usedBy": [
-        "democracy_human_rights_conventions_summary_he.html"
+        "democracy_human_rights_conventions_summary_he.html",
+        "democracy_courts_horizontal_accountability_summary_he.html"
       ],
       "cardTitleHe": "איך אמנות זכויות אדם צריכות להשפיע על בתי המשפט בישראל?",
       "authorsHe": "ברק מדינה",
@@ -146,7 +148,7 @@
       "file": "html_qa/democracy_civil_society_ngos_backsliding_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 10,
+      "currentHomepagePosition": 13,
       "primaryArticle": "democracy_civil_society_ngos_backsliding_summary_he.html",
       "usedBy": [
         "democracy_civil_society_ngos_backsliding_summary_he.html"
@@ -168,7 +170,7 @@
       "file": "html_qa/democracy_civil_servants_backsliding_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 11,
+      "currentHomepagePosition": 14,
       "primaryArticle": "democracy_civil_servants_backsliding_summary_he.html",
       "usedBy": [
         "democracy_civil_servants_backsliding_summary_he.html"
@@ -190,10 +192,11 @@
       "file": "html_qa/democracy_regime_classification_backsliding_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 12,
+      "currentHomepagePosition": 2,
       "primaryArticle": "democracy_regime_classification_backsliding_summary_he.html",
       "usedBy": [
-        "democracy_regime_classification_backsliding_summary_he.html"
+        "democracy_regime_classification_backsliding_summary_he.html",
+        "democracy_legislative_executive_relations_crisis_summary_he.html"
       ],
       "cardTitleHe": "האם נסיגה דמוקרטית היא רק ויכוח על בית המשפט?",
       "authorsHe": "גל אריאלי",
@@ -211,7 +214,7 @@
       "file": "html_qa/democracy_trade_unions_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 13,
+      "currentHomepagePosition": 16,
       "primaryArticle": "democracy_trade_unions_summary_he.html",
       "usedBy": [
         "democracy_trade_unions_summary_he.html"
@@ -233,7 +236,7 @@
       "file": "html_qa/democracy_constitutional_reform_economy_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 14,
+      "currentHomepagePosition": 17,
       "primaryArticle": "democracy_constitutional_reform_economy_summary_he.html",
       "usedBy": [
         "democracy_constitutional_reform_economy_summary_he.html"
@@ -255,7 +258,7 @@
       "file": "html_qa/democracy_political_violence_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 15,
+      "currentHomepagePosition": 18,
       "primaryArticle": "democracy_political_violence_summary_he.html",
       "usedBy": [
         "democracy_political_violence_summary_he.html"
@@ -277,7 +280,7 @@
       "file": "html_qa/democracy_israeli_democracy_crisis_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 16,
+      "currentHomepagePosition": 19,
       "primaryArticle": "democracy_israeli_democracy_crisis_summary_he.html",
       "usedBy": [
         "democracy_israeli_democracy_crisis_summary_he.html"
@@ -299,7 +302,7 @@
       "file": "html_qa/democracy_masses_support_backsliding_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 17,
+      "currentHomepagePosition": 20,
       "primaryArticle": "democracy_masses_support_backsliding_summary_he.html",
       "usedBy": [
         "democracy_masses_support_backsliding_summary_he.html"
@@ -321,7 +324,7 @@
       "file": "html_qa/democracy_judicial_overhaul_populist_picture_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 1,
+      "currentHomepagePosition": 4,
       "primaryArticle": "democracy_judicial_overhaul_populist_picture_summary_he.html",
       "usedBy": [
         "democracy_judicial_overhaul_populist_picture_summary_he.html",
@@ -344,7 +347,7 @@
       "file": "html_qa/democracy_gender_justice_backsliding_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 19,
+      "currentHomepagePosition": 22,
       "primaryArticle": "democracy_gender_justice_backsliding_summary_he.html",
       "usedBy": [
         "democracy_gender_justice_backsliding_summary_he.html"
@@ -366,7 +369,7 @@
       "file": "html_qa/democracy_majority_nationalism_equal_citizenship_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 2,
+      "currentHomepagePosition": 5,
       "primaryArticle": "democracy_majority_nationalism_equal_citizenship_summary_he.html",
       "usedBy": [
         "democracy_majority_nationalism_equal_citizenship_summary_he.html",
@@ -389,7 +392,7 @@
       "file": "html_qa/democracy_constitutional_moment_west_bank_summary_he.jpg",
       "width": 800,
       "height": 600,
-      "currentHomepagePosition": 3,
+      "currentHomepagePosition": 6,
       "primaryArticle": "democracy_constitutional_moment_west_bank_summary_he.html",
       "usedBy": [
         "democracy_constitutional_moment_west_bank_summary_he.html",
