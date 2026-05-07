@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 CLOUDFLARE = '<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "ce86138e8d17417db1b5cb824d2d3c86"}\'></script><!-- End Cloudflare Web Analytics -->'
 HOME_ICON = '<svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h5v-6h4v6h5v-9.5"></path></svg>'
-READING_NOTE = "הערת קריאה: התמצית נועדה להנגיש את עיקרי המאמר לקהל הרחב ואינה מחליפה קריאה אקדמית מלאה."
+READING_NOTE = "התמצית שלעיל היא תמצית עצמאית בעברית, שנכתבה בסיוע כלי בינה מלאכותית ובעריכה אנושית, על בסיס המאמר המקורי. היא אינה תרגום רשמי של התקציר או של המאמר, אינה מטעם המחברים או כתב העת, ואינה מחליפה קריאה במקור"
 
 
 def h(value: object) -> str:
