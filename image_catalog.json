@@ -414,13 +414,13 @@
   ],
   "topicGraphics": [
     {
-      "file": "html_qa/topic_constitutionalism_courts_rule_of_law.jpg",
-      "width": 800,
-      "height": 600,
+      "file": "assets/topic-icons/constitutionalism-courts-rule-of-law.svg",
+      "width": 160,
+      "height": 160,
       "topicId": "constitutionalism-courts-rule-of-law",
       "topicPage": "topics/constitutionalism-courts-rule-of-law.html",
       "titleHe": "חוקתיות, בתי משפט ושלטון החוק",
-      "visualDescriptionHe": "איור נושא על בית משפט, מאזניים, חוקתיות ושלטון החוק",
+      "visualDescriptionHe": "אייקון קומפקטי של בית משפט, מאזניים ושלטון החוק",
       "semanticDescriptionHe": "מאמרים על ביקורת שיפוטית, רפורמות חוקתיות, איזונים ובלמים והגנה מוסדית על זכויות.",
       "tags": [
         "חוקתיות",
@@ -429,16 +429,16 @@
         "איזונים ובלמים",
         "ביקורת שיפוטית"
       ],
-      "qualityNotes": "גרפיקת נושא מעודכנת ב-4:3, המבוססת על רקע ציורי רך מתוך שפת התמונות של האתר עם סמל נושא עדין, ללא טקסט או לוגו."
+      "qualityNotes": "אייקון SVG קטן ואינפורמטיבי, 1:1, קווי, ללא טקסט או לוגו, מיועד לכרטיסי הנושאים ולראש דפי הנושא."
     },
     {
-      "file": "html_qa/topic_democratic_backsliding_populism.jpg",
-      "width": 800,
-      "height": 600,
+      "file": "assets/topic-icons/democratic-backsliding-populism.svg",
+      "width": 160,
+      "height": 160,
       "topicId": "democratic-backsliding-populism",
       "topicPage": "topics/democratic-backsliding-populism.html",
       "titleHe": "נסיגה דמוקרטית ופופוליזם",
-      "visualDescriptionHe": "איור נושא על נסיגה דמוקרטית, מוסדות מוחלשים ופופוליזם",
+      "visualDescriptionHe": "אייקון קומפקטי של מוסד ציבורי, חץ יורד וסדק המסמנים נסיגה דמוקרטית",
       "semanticDescriptionHe": "מאמרים על שחיקת מוסדות, פופוליזם סמכותני, משברים משטריים והצטברות צעדים שמחלישים דמוקרטיה.",
       "tags": [
         "נסיגה דמוקרטית",
@@ -446,16 +446,16 @@
         "משבר דמוקרטי",
         "שחיקת מוסדות"
       ],
-      "qualityNotes": "גרפיקת נושא מעודכנת ב-4:3, המבוססת על רקע ציורי רך מתוך שפת התמונות של האתר עם סמל נושא עדין, ללא טקסט או לוגו."
+      "qualityNotes": "אייקון SVG קטן ואינפורמטיבי, 1:1, קווי, ללא טקסט או לוגו, מיועד לכרטיסי הנושאים ולראש דפי הנושא."
     },
     {
-      "file": "html_qa/topic_rights_equality_minorities.jpg",
-      "width": 800,
-      "height": 600,
+      "file": "assets/topic-icons/rights-equality-minorities.svg",
+      "width": 160,
+      "height": 160,
       "topicId": "rights-equality-minorities",
       "topicPage": "topics/rights-equality-minorities.html",
       "titleHe": "זכויות, שוויון ומיעוטים",
-      "visualDescriptionHe": "איור נושא על זכויות, שוויון אזרחי ומיעוטים במרחב ציבורי",
+      "visualDescriptionHe": "אייקון קומפקטי של אנשים וסימן שוויון לזכויות ולמיעוטים",
       "semanticDescriptionHe": "מאמרים על זכויות אדם, שוויון אזרחי, הדרה, מגדר, מיעוטים והקשר בין זכויות לבין דמוקרטיה ליברלית.",
       "tags": [
         "זכויות אדם",
@@ -464,16 +464,16 @@
         "הדרה",
         "מגדר"
       ],
-      "qualityNotes": "גרפיקת נושא מעודכנת ב-4:3, המבוססת על רקע ציורי רך מתוך שפת התמונות של האתר עם סמל נושא עדין, ללא טקסט או לוגו."
+      "qualityNotes": "אייקון SVG קטן ואינפורמטיבי, 1:1, קווי, ללא טקסט או לוגו, מיועד לכרטיסי הנושאים ולראש דפי הנושא."
     },
     {
-      "file": "html_qa/topic_institutions_civil_society_public_service.jpg",
-      "width": 800,
-      "height": 600,
+      "file": "assets/topic-icons/institutions-civil-society-public-service.svg",
+      "width": 160,
+      "height": 160,
       "topicId": "institutions-civil-society-public-service",
       "topicPage": "topics/institutions-civil-society-public-service.html",
       "titleHe": "מוסדות, חברה אזרחית ושירות ציבורי",
-      "visualDescriptionHe": "איור נושא על מוסדות ציבור, חברה אזרחית ורשת של פעולה קולקטיבית",
+      "visualDescriptionHe": "אייקון קומפקטי של מוסד ציבורי ורשת קשרים לחברה אזרחית ושירות ציבורי",
       "semanticDescriptionHe": "מאמרים על כנסת, שירות ציבורי, עמותות, איגודי עובדים, כלכלה ומנגנוני פעולה קולקטיבית בדמוקרטיה.",
       "tags": [
         "מוסדות",
@@ -482,16 +482,16 @@
         "איגודי עובדים",
         "כלכלה פוליטית"
       ],
-      "qualityNotes": "גרפיקת נושא מעודכנת ב-4:3, המבוססת על רקע ציורי רך מתוך שפת התמונות של האתר עם סמל נושא עדין, ללא טקסט או לוגו."
+      "qualityNotes": "אייקון SVG קטן ואינפורמטיבי, 1:1, קווי, ללא טקסט או לוגו, מיועד לכרטיסי הנושאים ולראש דפי הנושא."
     },
     {
-      "file": "html_qa/topic_public_opinion_polarization_violence.jpg",
-      "width": 800,
-      "height": 600,
+      "file": "assets/topic-icons/public-opinion-polarization-violence.svg",
+      "width": 160,
+      "height": 160,
       "topicId": "public-opinion-polarization-violence",
       "topicPage": "topics/public-opinion-polarization-violence.html",
       "titleHe": "דעת קהל, קיטוב ואלימות פוליטית",
-      "visualDescriptionHe": "איור נושא על דעת קהל, קיטוב ואלימות פוליטית",
+      "visualDescriptionHe": "אייקון קומפקטי של בועות שיח וחצים מנוגדים לדעת קהל וקיטוב",
       "semanticDescriptionHe": "מאמרים על עמדות ציבוריות, תמיכה בנסיגה דמוקרטית, קיטוב, זהות פוליטית והצדקת אלימות פוליטית.",
       "tags": [
         "דעת קהל",
@@ -500,7 +500,7 @@
         "תמיכה ציבורית",
         "זהות פוליטית"
       ],
-      "qualityNotes": "גרפיקת נושא מעודכנת ב-4:3, המבוססת על רקע ציורי רך מתוך שפת התמונות של האתר עם סמל נושא עדין, ללא טקסט או לוגו."
+      "qualityNotes": "אייקון SVG קטן ואינפורמטיבי, 1:1, קווי, ללא טקסט או לוגו, מיועד לכרטיסי הנושאים ולראש דפי הנושא."
     }
   ]
 }

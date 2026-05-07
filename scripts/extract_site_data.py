@@ -157,7 +157,7 @@ def extract_papers() -> None:
         "homepageLatestCount": topics_data.get("homepageLatestCount", 9),
         "topicPageSize": 50,
         "lastUpdated": topics_data.get("lastUpdated", ""),
-        "topicImageVersion": "20260507-topic-art",
+        "topicImageVersion": "20260507-topic-icons",
         "paperImageVersion": "800x600-landscape",
     }
     write_json(ROOT / "data" / "site.json", site)

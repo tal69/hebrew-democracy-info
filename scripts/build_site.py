@@ -356,7 +356,8 @@ HOME_CSS = '''    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; -
     .topic-grid { display:grid; grid-template-columns:repeat(5, minmax(0, 1fr)); gap:16px; }
     .topic-card, .item { display:flex; flex-direction:column; min-height:100%; overflow:hidden; background:var(--paper); border:1px solid var(--line); border-radius:8px; color:inherit; text-decoration:none; transition:border-color 160ms ease, transform 160ms ease; }
     .topic-card:hover, .topic-card:focus-visible, .item:hover, .item:focus-visible { border-color:var(--accent); transform:translateY(-2px); outline:none; }
-    .topic-preview, .preview { display:block; width:100%; height:auto; max-width:100%; aspect-ratio:4 / 3; object-fit:cover; object-position:top center; border-bottom:1px solid var(--line); background:#eef3f4; }
+    .topic-preview { display:block; width:96px; height:96px; max-width:calc(100% - 30px); margin:18px auto 0; object-fit:contain; border-radius:20px; background:#f7fbfb; }
+    .preview { display:block; width:100%; height:auto; max-width:100%; aspect-ratio:4 / 3; object-fit:cover; object-position:top center; border-bottom:1px solid var(--line); background:#eef3f4; }
     .topic-content, .content { display:flex; flex-direction:column; flex:1; padding:18px; }
     .topic-content { padding:15px; }
     .topic-content h2 { font-size:19px; }
@@ -382,7 +383,7 @@ HOME_CSS = '''    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; -
 def topic_card(topic: dict, site: dict) -> str:
     count = len(topic.get("articles", []))
     return f'''      <a class="topic-card" href="{h(topic["page"])}">
-        <img class="topic-preview" src="{h(topic_image_src(topic, site))}" alt="{h(topic["imageAltHe"])}" width="800" height="600" loading="lazy" decoding="async">
+        <img class="topic-preview" src="{h(topic_image_src(topic, site))}" alt="{h(topic["imageAltHe"])}" width="160" height="160" loading="lazy" decoding="async">
         <span class="topic-content">
           <h2>{h(topic["titleHe"])}</h2>
           <p>{h(topic["descriptionHe"])}</p>
@@ -510,8 +511,8 @@ TOPIC_CSS = '''    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; 
     .home-icon { width:19px; height:19px; flex:0 0 auto; }
     h1 { margin:0; color:var(--accent-dark); font-size:38px; line-height:1.2; }
     .intro { max-width:820px; margin:12px 0 0; color:var(--muted); font-size:19px; }
-    .topic-hero { display:grid; grid-template-columns:minmax(0, 1.2fr) minmax(280px, .8fr); gap:24px; align-items:center; margin:28px 0 0; }
-    .topic-hero img { display:block; width:100%; height:auto; aspect-ratio:4 / 3; object-fit:cover; border:1px solid var(--line); border-radius:8px; background:#eef3f4; }
+    .topic-hero { display:grid; grid-template-columns:minmax(0, 1fr) 132px; gap:22px; align-items:center; margin:26px 0 0; }
+    .topic-icon { display:block; width:128px; height:128px; justify-self:end; object-fit:contain; border-radius:24px; background:#f7fbfb; }
     .topic-note { color:var(--muted); font-size:17px; }
     .grid { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px; margin-top:28px; }
     .item { display:flex; flex-direction:column; min-height:100%; overflow:hidden; background:var(--paper); border:1px solid var(--line); border-radius:8px; color:inherit; text-decoration:none; transition:border-color 160ms ease, transform 160ms ease; }
@@ -530,7 +531,7 @@ TOPIC_CSS = '''    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; 
     .footer-links { margin-top:32px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:15px; }
     .footer-links a { color:var(--link); font-weight:700; }
     a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
-    @media (max-width:980px) { .grid { grid-template-columns:repeat(2, minmax(0,1fr)); } .topic-hero { grid-template-columns:1fr; } }
+    @media (max-width:980px) { .grid { grid-template-columns:repeat(2, minmax(0,1fr)); } .topic-hero { grid-template-columns:1fr; } .topic-icon { justify-self:start; width:112px; height:112px; } }
     @media (max-width:700px) { .grid { grid-template-columns:1fr; } h1 { font-size:31px; } .intro { font-size:18px; } }
     @media (max-width:520px) { main { width:min(100% - 24px, 1120px); padding-top:26px; } .content { padding:16px; } }
 '''
@@ -616,7 +617,7 @@ def render_topic_page(
       <p class="intro">{h(topic["descriptionHe"])}</p>
       <div class="topic-hero">
         <p class="topic-note">מאמר יכול להופיע ביותר מנושא אחד כאשר הוא עוסק, למשל, גם בזכויות וגם במוסדות או גם בפופוליזם וגם בבית המשפט. בעמוד זה מופיעות {len(papers)} תמציות שמשויכות לנושא.</p>
-        <img src="{h(topic_image_src(topic, site, "../"))}" alt="{h(topic["imageAltHe"])}" width="800" height="600" decoding="async" fetchpriority="high">
+        <img class="topic-icon" src="{h(topic_image_src(topic, site, "../"))}" alt="{h(topic["imageAltHe"])}" width="160" height="160" decoding="async" fetchpriority="high">
       </div>
     </header>
     <section class="grid" aria-label="תמציות בנושא {h(topic["titleHe"])}">
