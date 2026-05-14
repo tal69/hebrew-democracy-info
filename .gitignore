@@ -2,3 +2,8 @@
 __pycache__/
 *.py[cod]
 .npm-cache/
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/

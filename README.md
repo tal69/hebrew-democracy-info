@@ -1,23 +1,37 @@
 # הנגשת מידע בנושאי דמוקרטיה
 
-Static Hebrew RTL homepage and article summaries for GitHub Pages.
+Static Hebrew RTL homepage and article summaries for GitHub Pages, built with Jekyll and indexed with Pagefind.
 
-## Generated Site Workflow
+## Source Workflow
 
-The public HTML is generated from structured source data:
+The repository source is now Jekyll content, not hand-edited generated HTML:
 
-- `data/site.json` - site-level settings.
-- `data/paper_order.json` - global paper order, newest first.
-- `data/papers/*.json` - one structured record per paper summary.
-- `topics.json` - topic taxonomy and article membership.
-- `scripts/build_site.py` - generates article pages, topic pages, `index.html`, `sitemap.xml`, and `llms.txt`.
+- `_papers/*.md` - one Markdown/front-matter source file per paper summary.
+- `_data/site.json` - site-level settings.
+- `_data/topics.json` - topic taxonomy and topic metadata. Paper membership is read from each paper's `topics` list.
+- `_layouts/` and `_includes/` - shared page templates.
+- `assets/css/site.css` - shared visual styling.
+- `assets/topic-icons/` and `html_qa/` - topic icons and article images.
 
-To rebuild the site after changing paper or topic data:
+Codex nightly updates should add new papers as `_papers/*.md` files, add or reuse images, update `image_catalog.json`, and then commit/push. Update `_data/topics.json` only when adding or changing a topic. They should not edit generated HTML pages manually.
+
+Each paper source has a stable `sortKey`. New papers should receive larger `sortKey` values, such as `YYYYMMDD01`, `YYYYMMDD02`, and `YYYYMMDD03`, so the newest papers sort first without rewriting older paper files.
+
+## Build and Deploy
+
+GitHub Actions builds and deploys the site:
+
+1. `bundle exec jekyll build`
+2. `npx -y pagefind --site _site --output-subdir pagefind`
+3. upload `_site` to GitHub Pages
+
+For local testing:
 
 ```sh
-python3 scripts/build_site.py
-npm_config_cache="$PWD/.npm-cache" npx -y pagefind --site . --output-subdir pagefind
+bundle install
+bundle exec jekyll build
+npm_config_cache="$PWD/.npm-cache" npx -y pagefind --site _site --output-subdir pagefind
 rm -rf .npm-cache
 ```
 
-`scripts/extract_site_data.py` is a one-time migration helper that extracted the original hand-edited HTML into `data/`.
+The generated `_site/` directory and `pagefind/` output are build artifacts and are not committed.

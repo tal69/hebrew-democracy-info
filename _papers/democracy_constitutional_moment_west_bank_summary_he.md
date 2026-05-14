@@ -1,0 +1,88 @@
+---
+{
+  "version": 1,
+  "file": "democracy_constitutional_moment_west_bank_summary_he.html",
+  "slug": "democracy_constitutional_moment_west_bank_summary_he",
+  "order": 24,
+  "titleHe": "האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה?",
+  "subtitleHe": "תמצית עברית לקהל הרחב בישראל",
+  "descriptionHe": "המאמר טוען שאי אפשר להבין את הרגע החוקתי בישראל בלי להתייחס גם לשאלת השליטה בגדה המערבית ולמי נכלל בתוך הקהילה הפוליטית שמעצבת את החוקה.",
+  "summaryHe": "מבט על הקשר בין המשבר החוקתי בישראל לבין המציאות המשפטית והפוליטית בגדה המערבית.",
+  "authorsCardHe": "תמר הוסטובסקי ברנדס",
+  "paperTitle": "The Constitutional Overhaul and the West Bank: Is Israel's Constitutional Moment Occupied?",
+  "authorsHtml": "<a href=\"https://www.ono.ac.il/lecturer/dr-tamar-ostovsky-brandes/\" target=\"_blank\" rel=\"noopener noreferrer\">Tamar Hostovsky Brandes</a>",
+  "journal": "Israel Law Review",
+  "dateText": "2023",
+  "doiUrl": "https://doi.org/10.1017/S0021223723000195",
+  "doiLabel": "https://doi.org/10.1017/S0021223723000195",
+  "authors": [
+    {
+      "@type": "Person",
+      "name": "תמר הוסטובסקי ברנדס",
+      "url": "https://www.ono.ac.il/lecturer/dr-tamar-ostovsky-brandes/"
+    }
+  ],
+  "sourceAuthors": [
+    {
+      "@type": "Person",
+      "name": "Tamar Hostovsky Brandes"
+    }
+  ],
+  "topics": [
+    "constitutionalism-courts-rule-of-law",
+    "rights-equality-minorities"
+  ],
+  "keywords": [
+    "דמוקרטיה ליברלית",
+    "זכויות",
+    "מוסדות דמוקרטיים",
+    "שלטון החוק"
+  ],
+  "image": {
+    "src": "html_qa/democracy_constitutional_moment_west_bank_summary_he.jpg",
+    "version": "800x600-landscape",
+    "altHe": "איור על רפורמה חוקתית והגדה המערבית"
+  },
+  "dateModified": "2026-05-07",
+  "lastUpdatedHe": "7 במאי 2026",
+  "oneLinerHtml": "שורה תחתונה: המאמר טוען שאי אפשר להבין את הרגע החוקתי בישראל בלי להתייחס גם לשאלת השליטה בגדה המערבית ולמי נכלל בתוך הקהילה הפוליטית שמעצבת את החוקה.",
+  "sections": [
+    {
+      "headingHe": "מה נבדק במחקר",
+      "paragraphsHtml": [
+        "תמר הוסטובסקי ברנדס בוחנת את הרפורמה החוקתית בישראל דרך השאלה הרחבה של שליטה, אזרחות וגבולות הקהילה הפוליטית.",
+        "המאמר שואל האם ניתן לדבר על רגע חוקתי ישראלי כאילו הוא מתרחש רק בתוך גבולות האזרחות הישראלית הפורמלית, כאשר המציאות בגדה המערבית משפיעה על המשטר כולו.",
+        "הדיון מחבר בין משפט חוקתי, זכויות אדם, דמוקרטיה ושאלות של כיבוש ושליטה מתמשכת."
+      ]
+    },
+    {
+      "headingHe": "הממצאים המרכזיים",
+      "paragraphsHtml": [
+        "המאמר מצביע על כך שהמשבר החוקתי אינו מנותק מהמבנה הפוליטי הרחב שבו ישראל פועלת. שאלות של כוח, זכויות והשתתפות אינן נעצרות בקו הירוק.",
+        "כאשר קבוצה גדולה של אנשים מושפעת מהכרעות שלטוניות אך אינה משתתפת באופן שווה בעיצוב הכללים, מתחדדת השאלה מי הוא העם שמכונן את החוקה.",
+        "המאמר מציע שהעיסוק באיזונים ובלמים בתוך ישראל צריך לכלול גם את ההשלכות של השליטה בגדה על הדמוקרטיה הישראלית עצמה."
+      ]
+    },
+    {
+      "headingHe": "למה זה חשוב לישראל",
+      "paragraphsHtml": [
+        "הדיון הציבורי ברפורמה המשפטית התמקד לעיתים בממשלה, בכנסת ובבית המשפט. המאמר מרחיב את המבט אל השטח שבו מופעל כוח ישראלי בלי אזרחות שווה.",
+        "הוא מראה שחוקה אינה רק מסמך משפטי פנימי. היא גם סיפור על גבולות השייכות, על מי מקבל קול ועל מי נדרש לציית לכללים שלא השתתף בעיצובם.",
+        "לכן שאלת הדמוקרטיה בישראל קשורה גם לשאלת השליטה בגדה, ולא רק למבנה המוסדות בתוך מדינת ישראל הריבונית."
+      ]
+    },
+    {
+      "headingHe": "במילים פשוטות",
+      "paragraphsHtml": [
+        "אי אפשר לדבר ברצינות על כללי המשחק הדמוקרטיים בלי לשאול מי משתתף במשחק ומי מושפע ממנו מבחוץ או מלמטה.",
+        "המאמר מזכיר שהמשבר החוקתי הוא גם הזדמנות לשאול מהי קהילה פוליטית שוויונית, ולא רק מי ממנה שופטים."
+      ]
+    }
+  ],
+  "layout": "paper",
+  "title": "האם אפשר לדבר על חוקה בלי לדבר על השליטה בגדה?",
+  "permalink": "/democracy_constitutional_moment_west_bank_summary_he.html",
+  "paper_url": "democracy_constitutional_moment_west_bank_summary_he.html",
+  "sortKey": 202605070001
+}
+---

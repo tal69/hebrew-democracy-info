@@ -1,189 +1,36 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>{{ "/" | absolute_url }}</loc>
+    <lastmod>{{ site.data.site.lastUpdated }}</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+  {% for topic in site.data.topics.topics %}
   <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/accessibility.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/topics/constitutionalism-courts-rule-of-law.html</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>{{ topic.page | absolute_url }}</loc>
+    <lastmod>{{ site.data.site.lastUpdated }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+  {% endfor %}
+  {% assign papers = site.papers | sort: "sortKey" | reverse %}
+  {% for paper in papers %}
   <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/topics/democratic-backsliding-populism.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/topics/rights-equality-minorities.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/topics/institutions-civil-society-public-service.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/topics/public-opinion-polarization-violence.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_courts_horizontal_accountability_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>{{ paper.url | absolute_url }}</loc>
+    <lastmod>{{ paper.dateModified }}</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  {% endfor %}
   <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_legislative_executive_relations_crisis_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_nationality_basic_law_majority_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_populist_constitutionalism_overhaul_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_national_identity_equal_citizenship_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_promise_retrenchment_constitutionalism_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_legislative_backsliding_populism_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_abusive_constitutionalism_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_constitutionalising_system_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_first_brick_democratic_erosion_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_freedom_to_exclude_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_human_rights_conventions_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_civil_society_ngos_backsliding_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_civil_servants_backsliding_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_regime_classification_backsliding_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_trade_unions_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_reform_economy_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_political_violence_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_israeli_democracy_crisis_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_masses_support_backsliding_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_judicial_overhaul_populist_picture_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_gender_justice_backsliding_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_majority_nationalism_equal_citizenship_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tal69.github.io/hebrew-democracy-info/democracy_constitutional_moment_west_bank_summary_he.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>{{ "/accessibility.html" | absolute_url }}</loc>
+    <lastmod>{{ site.data.site.lastUpdated }}</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>

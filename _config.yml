@@ -1,0 +1,35 @@
+title: "הנגשת מידע בנושאי דמוקרטיה"
+description: "תמציות מאמרים אקדמיים של חוקרות וחוקרים ישראלים בנושאי דמוקרטיה ליברלית, זכויות, מוסדות ושלטון החוק."
+url: "https://tal69.github.io"
+baseurl: "/hebrew-democracy-info"
+lang: he
+direction: rtl
+timezone: Asia/Jerusalem
+
+collections:
+  papers:
+    output: true
+    permalink: /:name.html
+
+defaults:
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: paper
+
+exclude:
+  - .github/
+  - .npm-cache/
+  - data/
+  - node_modules/
+  - pagefind/
+  - scripts/
+  - README.md
+  - todo.md
+  - image_catalog.json
+  - Gemfile
+  - Gemfile.lock
+  - CARRD LOGO_3lang.avif
+  - "*.pyc"
+  - __pycache__/

@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ include.title }}</title>
+<meta name="description" content="{{ include.description | strip_html | escape }}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{{ include.url | default: page.url | absolute_url }}">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="{{ site.data.site.siteNameHe | escape }}">
+<meta property="og:type" content="{{ include.type | default: 'website' }}">
+<meta property="og:title" content="{{ include.title | escape }}">
+<meta property="og:description" content="{{ include.description | strip_html | escape }}">
+<meta property="og:url" content="{{ include.url | default: page.url | absolute_url }}">
+<meta property="og:image" content="{{ include.image | default: 'HEB_bold.jpg' | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ include.title | escape }}">
+<meta name="twitter:description" content="{{ include.description | strip_html | escape }}">
+<meta name="twitter:image" content="{{ include.image | default: 'HEB_bold.jpg' | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">

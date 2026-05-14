@@ -1,0 +1,89 @@
+---
+{
+  "version": 1,
+  "file": "democracy_judicial_overhaul_populist_picture_summary_he.html",
+  "slug": "democracy_judicial_overhaul_populist_picture_summary_he",
+  "order": 21,
+  "titleHe": "איך צעדים קטנים יכולים לשנות דמוקרטיה שלמה?",
+  "subtitleHe": "תמצית עברית לקהל הרחב בישראל",
+  "descriptionHe": "המאמר מציג את הרפורמה המשפטית לא כאוסף טכני של תיקונים, אלא כתמונה רחבה שבה כל שינוי קטן עשוי לחזק את כוח הרוב ולהחליש את מנגנוני האיזון.",
+  "summaryHe": "ניתוח של הרפורמה המשפטית כחלק מדפוס רחב של החלשת בלמים מוסדיים.",
+  "authorsCardHe": "סוזי נבות",
+  "paperTitle": "An Overview of Israel's ‘Judicial Overhaul’: Small Parts of a Big Populist Picture",
+  "authorsHtml": "<a href=\"https://en.idi.org.il/experts/38336\" target=\"_blank\" rel=\"noopener noreferrer\">Suzie Navot</a>",
+  "journal": "Israel Law Review",
+  "dateText": "2023",
+  "doiUrl": "https://doi.org/10.1017/S0021223723000262",
+  "doiLabel": "https://doi.org/10.1017/S0021223723000262",
+  "authors": [
+    {
+      "@type": "Person",
+      "name": "סוזי נבות",
+      "url": "https://en.idi.org.il/experts/38336"
+    }
+  ],
+  "sourceAuthors": [
+    {
+      "@type": "Person",
+      "name": "Suzie Navot"
+    }
+  ],
+  "topics": [
+    "constitutionalism-courts-rule-of-law",
+    "democratic-backsliding-populism",
+    "institutions-civil-society-public-service"
+  ],
+  "keywords": [
+    "דמוקרטיה ליברלית",
+    "זכויות",
+    "מוסדות דמוקרטיים",
+    "שלטון החוק"
+  ],
+  "image": {
+    "src": "html_qa/democracy_judicial_overhaul_populist_picture_summary_he.jpg",
+    "version": "800x600-landscape",
+    "altHe": "איור על הרפורמה המשפטית ודפוס פופוליסטי רחב"
+  },
+  "dateModified": "2026-05-07",
+  "lastUpdatedHe": "7 במאי 2026",
+  "oneLinerHtml": "שורה תחתונה: המאמר מציג את הרפורמה המשפטית לא כאוסף טכני של תיקונים, אלא כתמונה רחבה שבה כל שינוי קטן עשוי לחזק את כוח הרוב ולהחליש את מנגנוני האיזון.",
+  "sections": [
+    {
+      "headingHe": "מה נבדק במחקר",
+      "paragraphsHtml": [
+        "סוזי נבות מנתחת את מרכיבי הרפורמה המשפטית בישראל וממקמת אותם בתוך דפוס רחב יותר של פופוליזם חוקתי.",
+        "המאמר בוחן לא רק את ההצעות עצמן, אלא את ההיגיון המצטבר שלהן: מי ממנה שופטים, מי מבקר את הממשלה, ומה נשאר מכוחם של מוסדות עצמאיים.",
+        "הטענה המרכזית היא שהסכנה לדמוקרטיה יכולה להופיע כסדרה של צעדים משפטיים נפרדים, שכל אחד מהם נשמע מוגבל, אך יחד הם משנים את מאזן הכוחות."
+      ]
+    },
+    {
+      "headingHe": "הממצאים המרכזיים",
+      "paragraphsHtml": [
+        "המאמר מדגיש את הקשר בין פגיעה בביקורת שיפוטית לבין התחזקות שלטון הרוב ללא בלמים מספיקים.",
+        "פופוליזם חוקתי מציג לעיתים מוסדות עצמאיים כמי שפועלים נגד רצון העם. כך קל יותר להצדיק החלשה של בתי משפט, ייעוץ משפטי ושומרי סף.",
+        "כאשר מחברים את כל הרכיבים, התמונה אינה רק רפורמה במערכת המשפט אלא שינוי עמוק באיזון בין הממשלה, הכנסת, בתי המשפט והאזרחים."
+      ]
+    },
+    {
+      "headingHe": "למה זה חשוב לישראל",
+      "paragraphsHtml": [
+        "בישראל אין חוקה שלמה ואין בית שני בפרלמנט. לכן בית המשפט ושומרי הסף ממלאים תפקיד משמעותי במיוחד בהגבלת כוח פוליטי.",
+        "המאמר עוזר לקורא להבין למה פרטים מוסדיים שנראים טכניים יכולים להשפיע על זכויות אזרח, על זכויות מיעוט ועל היכולת להתנגד לשלטון.",
+        "השאלה הציבורית אינה רק אם צריך לתקן את מערכת המשפט, אלא האם התיקון משמר מערכת בלמים או מפרק אותה."
+      ]
+    },
+    {
+      "headingHe": "במילים פשוטות",
+      "paragraphsHtml": [
+        "דמוקרטיה יכולה להיחלש לא רק ביום אחד דרמטי, אלא גם דרך הרבה שינויים קטנים שנראים בנפרד סבירים יותר.",
+        "לכן כדאי לבחון כל תיקון לא רק בפני עצמו, אלא כחלק ממפה כוללת: מי מקבל יותר כוח, ומי נשאר מסוגל להגיד לשלטון לא."
+      ]
+    }
+  ],
+  "layout": "paper",
+  "title": "איך צעדים קטנים יכולים לשנות דמוקרטיה שלמה?",
+  "permalink": "/democracy_judicial_overhaul_populist_picture_summary_he.html",
+  "paper_url": "democracy_judicial_overhaul_populist_picture_summary_he.html",
+  "sortKey": 202605070004
+}
+---

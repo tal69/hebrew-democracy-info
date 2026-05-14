@@ -1,0 +1,15 @@
+{% assign paper = include.paper %}
+{% assign image_src = paper.image.src %}
+{% if paper.image.version %}
+  {% assign image_src = image_src | append: '?v=' | append: paper.image.version %}
+{% endif %}
+<a class="item" href="{{ paper.url | relative_url }}">
+  <img class="preview" src="{{ image_src | relative_url }}" alt="{{ paper.image.altHe | escape }}" width="800" height="600" {% if include.high_priority %}decoding="async" fetchpriority="high"{% else %}loading="lazy" decoding="async"{% endif %}>
+  <span class="content">
+    {% if include.show_new %}<span class="new-badge">חדש!</span>{% endif %}
+    <h2>{{ paper.titleHe }}</h2>
+    <p class="authors">{{ paper.authorsCardHe }}</p>
+    <p class="summary">{{ paper.summaryHe }}</p>
+    <span class="open">לקריאת העמוד</span>
+  </span>
+</a>
