@@ -34,4 +34,6 @@ npm_config_cache="$PWD/.npm-cache" npx -y pagefind --site _site --output-subdir 
 rm -rf .npm-cache
 ```
 
+Use a Ruby version compatible with the `github-pages` gem for local builds. The GitHub Actions workflow is the canonical deployment build.
+
 The generated `_site/` directory and `pagefind/` output are build artifacts and are not committed.
