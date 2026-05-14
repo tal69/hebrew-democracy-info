@@ -11,6 +11,7 @@ The repository source is now Jekyll content, not hand-edited generated HTML:
 - `_data/topics.json` - topic taxonomy and topic metadata. Paper membership is read from each paper's `topics` list.
 - `_data/paper_index.json` - compact generated index for duplicate checks and nightly updates. Regenerate it from `_papers/*.md`; do not edit it manually.
 - `_layouts/` and `_includes/` - shared page templates.
+- `_includes/analytics.html` - site-wide GoatCounter analytics snippet.
 - `assets/css/site.css` - shared visual styling.
 - `assets/topic-icons/` and `html_qa/` - topic icons and article images.
 - `scripts/validate_sources.py` - source validator and paper-index generator.
