@@ -30,6 +30,9 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Make built site writable
+        run: sudo chown -R "$(id -u):$(id -g)" _site
+
       - name: Build Pagefind index
         run: npx -y pagefind --site _site --output-subdir pagefind
 
