@@ -48,7 +48,7 @@
 
     <section class="section latest-section" aria-labelledby="latest-heading">
       <h2 class="section-heading" id="latest-heading">חדש באתר</h2>
-      <div class="grid" aria-label="תשע התמציות האחרונות">
+      <div class="grid" aria-label="שש התמציות האחרונות">
         {% assign papers = site.papers | sort: "sortKey" | reverse %}
         {% for paper in papers limit: site.data.site.homepageLatestCount %}
           {% assign show_new = false %}
