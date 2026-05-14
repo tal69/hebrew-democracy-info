@@ -30,6 +30,5 @@ exclude:
   - image_catalog.json
   - Gemfile
   - Gemfile.lock
-  - CARRD LOGO_3lang.avif
   - "*.pyc"
   - __pycache__/
