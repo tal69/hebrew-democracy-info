@@ -1,8 +1,89 @@
 {
   "version": 1,
   "description": "Compact duplicate-checking and nightly-update index generated from _papers/*.md. Do not edit by hand; run scripts/validate_sources.py --write-index.",
-  "paperCount": 24,
+  "paperCount": 27,
   "papers": [
+    {
+      "slug": "democracy_judicial_revolution_reconceptualized_summary_he",
+      "file": "democracy_judicial_revolution_reconceptualized_summary_he.html",
+      "permalink": "/democracy_judicial_revolution_reconceptualized_summary_he.html",
+      "sortKey": 202605150003,
+      "titleHe": "האם הרפורמה המשפטית באמת מתקנת את מהפכת שנות התשעים?",
+      "paperTitle": "Reconceptualizing the 1990s judicial revolution in Israel and its implications for 2023–25",
+      "authorsCardHe": "אודי זומר, רייצ'ל קולסון, נתניאל שמידט",
+      "sourceAuthors": [
+        "Udi Sommer",
+        "Rachel Colson",
+        "Nathaniel Schmidt"
+      ],
+      "journal": "Frontiers in Political Science",
+      "dateText": "פורסם אונליין: 13 במרץ 2025",
+      "doiUrl": "https://doi.org/10.3389/fpos.2025.1535824",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism"
+      ],
+      "image": {
+        "src": "html_qa/democracy_abusive_constitutionalism_summary_he.jpg",
+        "altHe": "איור על בית משפט, איזונים ובלמים והוויכוח על מהפכה משפטית"
+      },
+      "dateModified": "2026-05-15",
+      "summaryHe": "איך קריאה מחדש של מהפכת שנות התשעים משנה את ההבנה של המשבר החוקתי הנוכחי."
+    },
+    {
+      "slug": "democracy_state_deconstruction_summary_he",
+      "file": "democracy_state_deconstruction_summary_he.html",
+      "permalink": "/democracy_state_deconstruction_summary_he.html",
+      "sortKey": 202605150002,
+      "titleHe": "מה קורה לדמוקרטיה כאשר המדינה עצמה מפורקת?",
+      "paperTitle": "The deconstruction of the Israeli state",
+      "authorsCardHe": "דורון נבות, יאיר גולדשמידט",
+      "sourceAuthors": [
+        "Doron Navot",
+        "Yair Goldshmidt"
+      ],
+      "journal": "Frontiers in Political Science",
+      "dateText": "פורסם אונליין: 26 בפברואר 2025",
+      "doiUrl": "https://doi.org/10.3389/fpos.2025.1553516",
+      "topics": [
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service",
+        "constitutionalism-courts-rule-of-law"
+      ],
+      "image": {
+        "src": "html_qa/democracy_civil_servants_backsliding_summary_he.jpg",
+        "altHe": "איור על מוסדות מדינה, שירות ציבורי ושחיקת שלטון החוק"
+      },
+      "dateModified": "2026-05-15",
+      "summaryHe": "איך פגיעה במוסדות המדינה יכולה להפוך לנסיגה דמוקרטית עמוקה."
+    },
+    {
+      "slug": "democracy_knesset_democracy_framings_summary_he",
+      "file": "democracy_knesset_democracy_framings_summary_he.html",
+      "permalink": "/democracy_knesset_democracy_framings_summary_he.html",
+      "sortKey": 202605150001,
+      "titleHe": "איך חברי כנסת מבינים דמוקרטיה בזמן משבר?",
+      "paperTitle": "The crises of Israeli democracy: political-ideological framings by members of Israel’s 24th Knesset",
+      "authorsCardHe": "יואב ארד, מייקל פרידמן",
+      "sourceAuthors": [
+        "Yoav Arad",
+        "Michael Freedman"
+      ],
+      "journal": "Frontiers in Political Science",
+      "dateText": "פורסם אונליין: 26 בפברואר 2025",
+      "doiUrl": "https://doi.org/10.3389/fpos.2025.1530752",
+      "topics": [
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service",
+        "public-opinion-polarization-violence"
+      ],
+      "image": {
+        "src": "html_qa/democracy_legislative_backsliding_populism_summary_he.jpg",
+        "altHe": "איור על דיון בכנסת, מושג הדמוקרטיה וקיטוב אידיאולוגי"
+      },
+      "dateModified": "2026-05-15",
+      "summaryHe": "איך תפיסות שונות של דמוקרטיה בכנסת משפיעות על מאבקי זכויות ומוסדות."
+    },
     {
       "slug": "democracy_courts_horizontal_accountability_summary_he",
       "file": "democracy_courts_horizontal_accountability_summary_he.html",
