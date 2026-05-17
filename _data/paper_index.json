@@ -1,8 +1,87 @@
 {
   "version": 1,
   "description": "Compact duplicate-checking and nightly-update index generated from _papers/*.md. Do not edit by hand; run scripts/validate_sources.py --write-index.",
-  "paperCount": 27,
+  "paperCount": 30,
   "papers": [
+    {
+      "slug": "democracy_local_democracy_autonomy_summary_he",
+      "file": "democracy_local_democracy_autonomy_summary_he.html",
+      "permalink": "/democracy_local_democracy_autonomy_summary_he.html",
+      "sortKey": 202605170003,
+      "titleHe": "איך דמוקרטיה מקומית משנה את היחס בין אוטונומיה, ליברליזם ושלטון מרכזי?",
+      "paperTitle": "Local democracy as local autonomy",
+      "authorsCardHe": "ישי בלנק, איסי רוזן-צבי, דן לרגמן",
+      "sourceAuthors": [
+        "Yishai Blank",
+        "Issi Rosen-Zvi",
+        "Dan Largman"
+      ],
+      "journal": "Theoretical Inquiries in Law",
+      "dateText": "גיליון: 2025; פורסם בכרך 26, גיליון 2",
+      "doiUrl": "https://doi.org/10.1515/til-2025-0022",
+      "topics": [
+        "institutions-civil-society-public-service",
+        "constitutionalism-courts-rule-of-law"
+      ],
+      "image": {
+        "src": "html_qa/democracy_civil_society_ngos_backsliding_summary_he.jpg",
+        "altHe": "איור על התארגנות מקומית, מוסדות עירוניים וחברה אזרחית במרחב דמוקרטי"
+      },
+      "dateModified": "2026-05-17",
+      "summaryHe": "איך אוטונומיה מקומית יכולה להרחיב את ההבנה של דמוקרטיה מעבר לבחירות ולמוסדות ברמה הלאומית."
+    },
+    {
+      "slug": "democracy_constitutional_overhaul_civic_mobilization_summary_he",
+      "file": "democracy_constitutional_overhaul_civic_mobilization_summary_he.html",
+      "permalink": "/democracy_constitutional_overhaul_civic_mobilization_summary_he.html",
+      "sortKey": 202605170002,
+      "titleHe": "מה מגלה הפער בין המחאה נגד הרפורמה המשפטית לבין השתיקה בזמן המלחמה?",
+      "paperTitle": "Constitutional Overhaul, the War in Gaza, and the Puzzle of Civic Mobilization in Israel",
+      "authorsCardHe": "אדם שנער",
+      "sourceAuthors": [
+        "Adam Shinar"
+      ],
+      "journal": "German Law Journal",
+      "dateText": "פורסם אונליין: 28 באוקטובר 2024; גיליון: פברואר 2025",
+      "doiUrl": "https://doi.org/10.1017/glj.2024.37",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism",
+        "rights-equality-minorities",
+        "institutions-civil-society-public-service"
+      ],
+      "image": {
+        "src": "html_qa/democracy_constitutionalising_system_summary_he.jpg",
+        "altHe": "איור על דיון חוקתי מכליל, זכויות מיעוטים ושלטון החוק בישראל"
+      },
+      "dateModified": "2026-05-17",
+      "summaryHe": "איך פערי המחאה סביב הרפורמה המשפטית והמלחמה חושפים גבולות של ליברליזם, זכויות ושוויון בישראל."
+    },
+    {
+      "slug": "democracy_judicial_activism_sources_summary_he",
+      "file": "democracy_judicial_activism_sources_summary_he.html",
+      "permalink": "/democracy_judicial_activism_sources_summary_he.html",
+      "sortKey": 202605170001,
+      "titleHe": "למה האקטיביזם השיפוטי בישראל קשור להגנה על דמוקרטיה ליברלית?",
+      "paperTitle": "Judicial Activism in Israel: Sources, Forms and Manifestations",
+      "authorsCardHe": "עלי זלצברגר",
+      "sourceAuthors": [
+        "Eli Salzberger"
+      ],
+      "journal": "SSRN / Judicial Activism in Common Law Supreme Courts",
+      "dateText": "פורסם כמאמר SSRN: 2007; גרסה מתוקנת: 12 באוקטובר 2014; תאריך כתיבה: 7 בינואר 2015",
+      "doiUrl": "https://doi.org/10.2139/ssrn.957849",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "institutions-civil-society-public-service"
+      ],
+      "image": {
+        "src": "html_qa/democracy_judicial_overhaul_populist_picture_summary_he.jpg",
+        "altHe": "איור על בית המשפט העליון, איזונים ובלמים ואקטיביזם שיפוטי בישראל"
+      },
+      "dateModified": "2026-05-17",
+      "summaryHe": "איך בית המשפט העליון בישראל הפך למנגנון מרכזי של זכויות, ביקורת שלטונית והגנה על דמוקרטיה ליברלית."
+    },
     {
       "slug": "democracy_judicial_revolution_reconceptualized_summary_he",
       "file": "democracy_judicial_revolution_reconceptualized_summary_he.html",
