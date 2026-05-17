@@ -24,6 +24,7 @@ The site is right-to-left Hebrew, uses shared Jekyll layouts, includes Pagefind 
 
 - `README.md` - user-facing source workflow and build notes.
 - `AGENTS.md` - short instructions for future Codex agents.
+- `Authors.MD` - optional preferred-author list for nightly scans.
 - `_papers/*.md` - one paper summary per Markdown/front matter file.
 - `_data/site.json` - site-level settings, including `homepageLatestCount`, `topicPageSize`, `lastUpdated`, image-version labels, and the standard disclaimer.
 - `_data/topics.json` - topic taxonomy. Paper membership is read from each paper file's `topics` list.
@@ -65,18 +66,19 @@ Local Jekyll may fail on this machine if Ruby/Bundler is not configured. Do not 
 
 Use this sequence for manual or automated paper additions:
 
-1. Read `README.md`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
+1. Read `README.md`, `Authors.MD`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
 2. Check `_data/paper_index.json` for duplicate DOI, slug, title, author, and theme.
-3. Add a new `_papers/*.md` file with JSON front matter between `---` markers.
-4. Give new papers larger numeric `sortKey` values than existing records, usually `YYYYMMDD0001`, `YYYYMMDD0002`, etc. The index sorts descending by `sortKey`.
-5. Assign one or more existing topic IDs from `_data/topics.json`.
-6. Link author names only when the author identity is certain and the link is an official academic profile or clearly maintained academic home page.
-7. Make external paper and author links open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` in stored HTML fields.
-8. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
-9. Update `image_catalog.json`.
-10. Run `python3 scripts/validate_sources.py --write-index`.
-11. Run `python3 scripts/validate_sources.py`.
-12. Commit and push source changes only.
+3. If `Authors.MD` lists preferred authors, search first for recent relevant publications by those authors. Do not add an out-of-scope paper only because the author is listed.
+4. Add a new `_papers/*.md` file with JSON front matter between `---` markers.
+5. Give new papers larger numeric `sortKey` values than existing records, usually `YYYYMMDD0001`, `YYYYMMDD0002`, etc. The index sorts descending by `sortKey`.
+6. Assign one or more existing topic IDs from `_data/topics.json`.
+7. Link author names only when the author identity is certain and the link is an official academic profile or clearly maintained academic home page.
+8. Make external paper and author links open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` in stored HTML fields.
+9. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
+10. Update `image_catalog.json`.
+11. Run `python3 scripts/validate_sources.py --write-index`.
+12. Run `python3 scripts/validate_sources.py`.
+13. Commit and push source changes only.
 
 Do not edit generated root HTML pages, `_site/`, or `pagefind/` by hand.
 

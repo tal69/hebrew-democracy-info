@@ -6,6 +6,7 @@ This repository is the Jekyll source for the Hebrew democracy summaries site. Do
 
 For paper additions:
 
+- Read `Authors.MD` before searching. Prioritize relevant non-duplicate papers by listed authors, but do not add out-of-scope papers only because the author is listed.
 - Use `_data/paper_index.json` as the primary duplicate and ordering index.
 - Add one source file per paper under `_papers/`.
 - Use existing topic IDs from `_data/topics.json` unless a durable new topic is really needed.
