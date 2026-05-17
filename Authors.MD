@@ -10,7 +10,9 @@ This repository is public. Add only information that can safely be public, espec
 
 | Priority | Name in Hebrew | Name in English | Affiliation | Email | ORCID | Notes and Search Terms |
 | --- | --- | --- | --- | --- | --- | --- |
-| high |  |  |  |  |  |  |
+| high | איסי רוזן-צבי | Issi Rosen-Zvi | הפקולטה למשפטים, אוניברסיטת תל אביב | issirz@tauex.tau.ac.il |  | משפטים; אוניברסיטת תל אביב; דמוקרטיה; משפט חוקתי; שלטון החוק |
+| high | עלי זלצברגר | Eli Salzberger | הפקולטה למשפטים, אוניברסיטת חיפה | salzberg@law.haifa.ac.il |  | משפטים; אוניברסיטת חיפה; דמוקרטיה; משפט חוקתי; שלטון החוק |
+| high | עמוס ישראל | Amos Israel | מכללת ספיר | Aisrael@mail.sapir.ac.il |  | מכללת ספיר; דמוקרטיה; משפט; חברה אזרחית |
 
 ## Editing Notes
 
