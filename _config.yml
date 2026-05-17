@@ -21,7 +21,10 @@ defaults:
 exclude:
   - .github/
   - .npm-cache/
+  - AGENTS.md
+  - AUTOMATION_PROMPT.md
   - data/
+  - HANDOFF.md
   - node_modules/
   - pagefind/
   - scripts/
