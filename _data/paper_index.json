@@ -1,8 +1,88 @@
 {
   "version": 1,
   "description": "Compact duplicate-checking and nightly-update index generated from _papers/*.md. Do not edit by hand; run scripts/validate_sources.py --write-index.",
-  "paperCount": 33,
+  "paperCount": 36,
   "papers": [
+    {
+      "slug": "democracy_majoritarian_consensus_constitution_summary_he",
+      "file": "democracy_majoritarian_consensus_constitution_summary_he.html",
+      "permalink": "/democracy_majoritarian_consensus_constitution_summary_he.html",
+      "sortKey": 202605190006,
+      "titleHe": "איך דמוקרטיית הסכמה נקלעת למשבר רובני?",
+      "paperTitle": "Majoritarian politics in a consensus democracy: how judicialization of politics helped lay bare the contradictions of Israel's constitution",
+      "authorsCardHe": "יוחנן ד' מוסל, מתיו שוגרט",
+      "sourceAuthors": [
+        "Johanan D. Mussel",
+        "Matthew Shugart"
+      ],
+      "journal": "Frontiers in Political Science",
+      "dateText": "פורסם אונליין: 4 באפריל 2025",
+      "doiUrl": "https://doi.org/10.3389/fpos.2025.1554064",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service",
+        "public-opinion-polarization-violence"
+      ],
+      "image": {
+        "src": "html_qa/democracy_regime_classification_backsliding_summary_he.jpg",
+        "altHe": "איור על סיווג משטר, דמוקרטיית הסכמה ומשבר רובני בישראל"
+      },
+      "dateModified": "2026-05-19",
+      "summaryHe": "איך שילוב של שיטת מפלגות, חוקה לא משוריינת ובית משפט חזק יצר משבר רובני בתוך דמוקרטיית הסכמה."
+    },
+    {
+      "slug": "democracy_polarisation_constitutional_crisis_summary_he",
+      "file": "democracy_polarisation_constitutional_crisis_summary_he.html",
+      "permalink": "/democracy_polarisation_constitutional_crisis_summary_he.html",
+      "sortKey": 202605190005,
+      "titleHe": "איך קיטוב פוליטי הופך משבר חוקתי לבלתי פתיר?",
+      "paperTitle": "Political Polarisation and the Constitutional Crisis in Israel",
+      "authorsCardHe": "עידו פורת",
+      "sourceAuthors": [
+        "Iddo Porat"
+      ],
+      "journal": "Israel Law Review",
+      "dateText": "פורסם אונליין: 24 בנובמבר 2023; גיליון: נובמבר 2023",
+      "doiUrl": "https://doi.org/10.1017/S0021223723000213",
+      "topics": [
+        "public-opinion-polarization-violence",
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism"
+      ],
+      "image": {
+        "src": "html_qa/democracy_israeli_democracy_crisis_summary_he.jpg",
+        "altHe": "איור על משבר בדמוקרטיה הישראלית, קיטוב פוליטי ומוסדות חוקתיים"
+      },
+      "dateModified": "2026-05-19",
+      "summaryHe": "איך קיטוב רגשי ופוליטי הופך את הוויכוח על בית המשפט לעימות חוקתי חריף וקשה לפתרון."
+    },
+    {
+      "slug": "democracy_court_capture_judicial_selection_summary_he",
+      "file": "democracy_court_capture_judicial_selection_summary_he.html",
+      "permalink": "/democracy_court_capture_judicial_selection_summary_he.html",
+      "sortKey": 202605190004,
+      "titleHe": "למה שליטה פוליטית במינוי שופטים היא ניסיון ללכוד את בתי המשפט?",
+      "paperTitle": "The Attempt to Capture the Courts in Israel",
+      "authorsCardHe": "גיא לוריא",
+      "sourceAuthors": [
+        "Guy Lurie"
+      ],
+      "journal": "Israel Law Review",
+      "dateText": "פורסם אונליין: 12 באוקטובר 2023; גיליון: נובמבר 2023",
+      "doiUrl": "https://doi.org/10.1017/S002122372300016X",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service"
+      ],
+      "image": {
+        "src": "html_qa/democracy_abusive_constitutionalism_summary_he.jpg",
+        "altHe": "איור על בית משפט, מינוי שופטים וניסיון לרכז כוח פוליטי"
+      },
+      "dateModified": "2026-05-19",
+      "summaryHe": "איך שינוי שיטת מינוי השופטים יכול להעביר את מערכת המשפט משליטה מקצועית-מאזנת לשליטה פוליטית של הקואליציה."
+    },
     {
       "slug": "democracy_disruptive_protests_backsliding_summary_he",
       "file": "democracy_disruptive_protests_backsliding_summary_he.html",
