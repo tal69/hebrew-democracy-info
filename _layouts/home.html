@@ -47,22 +47,6 @@
       <div class="search-panel" id="search" role="search" aria-label="חיפוש בתמציות"></div>
     </header>
 
-    <section class="section latest-section" aria-labelledby="latest-heading">
-      <h2 class="section-heading" id="latest-heading">חדש באתר</h2>
-      <div class="grid" aria-label="שש התמציות האחרונות">
-        {% assign papers = site.papers | sort: "sortKey" | reverse %}
-        {% for paper in papers limit: site.data.site.homepageLatestCount %}
-          {% assign show_new = false %}
-          {% assign high_priority = false %}
-          {% if forloop.index <= 3 %}
-            {% assign show_new = true %}
-            {% assign high_priority = true %}
-          {% endif %}
-          {% include paper_card.html paper=paper show_new=show_new high_priority=high_priority %}
-        {% endfor %}
-      </div>
-    </section>
-
     <section class="section topics-section" aria-labelledby="topics-heading">
       <h2 class="section-heading" id="topics-heading">נושאים מרכזיים</h2>
       <div class="topic-grid" aria-label="דפי נושאים מרכזיים">
@@ -83,6 +67,22 @@
               <span class="topic-count">{{ topic_count }} תמציות בנושא</span>
             </span>
           </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section latest-section" aria-labelledby="latest-heading">
+      <h2 class="section-heading" id="latest-heading">חדש באתר</h2>
+      <div class="grid" aria-label="שש התמציות האחרונות">
+        {% assign papers = site.papers | sort: "sortKey" | reverse %}
+        {% for paper in papers limit: site.data.site.homepageLatestCount %}
+          {% assign show_new = false %}
+          {% assign high_priority = false %}
+          {% if forloop.index <= 3 %}
+            {% assign show_new = true %}
+            {% assign high_priority = true %}
+          {% endif %}
+          {% include paper_card.html paper=paper show_new=show_new high_priority=high_priority %}
         {% endfor %}
       </div>
     </section>
