@@ -7,10 +7,10 @@ Prepared on 2026-05-17 for continuing this project from another OpenAI Codex acc
 - GitHub repo: `https://github.com/tal69/hebrew-democracy-info.git`
 - Branch: `main`
 - Live site: `https://tal69.github.io/hebrew-democracy-info/`
-- Source directory on this machine: `/Users/talraviv/Library/CloudStorage/Dropbox/My Mac (Tals-MacBook-Air.local)/Documents/DemocracyWebSite/github_pages_publish`
+- Source directory on this machine: `/Users/talraviv/Documents/DemocracyWebSite/github_pages_publish`
 - Content source commit at handoff start: `2224e881af3e`
-- Current content count: 27 paper summaries, 5 topics.
-- Latest source validation at handoff: `python3 scripts/validate_sources.py` passed with 27 papers and 5 topics.
+- Current content count: 33 paper summaries, 5 topics.
+- Latest source validation after queue setup: `python3 scripts/validate_sources.py` passed with 33 papers and 5 topics.
 
 This is a Jekyll source repository. Generated pages are built by GitHub Actions and should not be maintained manually.
 
@@ -25,6 +25,7 @@ The site is right-to-left Hebrew, uses shared Jekyll layouts, includes Pagefind 
 - `README.md` - user-facing source workflow and build notes.
 - `AGENTS.md` - short instructions for future Codex agents.
 - `Authors.MD` - optional preferred-author list for nightly scans.
+- `paper_queue.csv` - editable queue of upcoming nightly papers; nightly automation consumes the first 3 rows and removes them after adding those papers.
 - `_papers/*.md` - one paper summary per Markdown/front matter file.
 - `_data/site.json` - site-level settings, including `homepageLatestCount`, `topicPageSize`, `lastUpdated`, image-version labels, and the standard disclaimer.
 - `_data/topics.json` - topic taxonomy. Paper membership is read from each paper file's `topics` list.
@@ -66,9 +67,9 @@ Local Jekyll may fail on this machine if Ruby/Bundler is not configured. Do not 
 
 Use this sequence for manual or automated paper additions:
 
-1. Read `README.md`, `Authors.MD`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
-2. Check `_data/paper_index.json` for duplicate DOI, slug, title, author, and theme.
-3. If `Authors.MD` lists preferred authors, search first for recent relevant publications by those authors. Do not add an out-of-scope paper only because the author is listed.
+1. Read `README.md`, `paper_queue.csv`, `Authors.MD`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
+2. For nightly runs, select the first 3 rows of `paper_queue.csv`; only search for a new 30-paper queue when fewer than 3 queued rows are available at the start.
+3. Check `_data/paper_index.json` and `paper_queue.csv` for duplicate DOI, slug, title, author, and theme.
 4. Add a new `_papers/*.md` file with JSON front matter between `---` markers.
 5. Give new papers larger numeric `sortKey` values than existing records, usually `YYYYMMDD0001`, `YYYYMMDD0002`, etc. The index sorts descending by `sortKey`.
 6. Assign one or more existing topic IDs from `_data/topics.json`.
@@ -76,9 +77,10 @@ Use this sequence for manual or automated paper additions:
 8. Make external paper and author links open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` in stored HTML fields.
 9. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
 10. Update `image_catalog.json`.
-11. Run `python3 scripts/validate_sources.py --write-index`.
-12. Run `python3 scripts/validate_sources.py`.
-13. Commit and push source changes only.
+11. Remove consumed rows from `paper_queue.csv`.
+12. Run `python3 scripts/validate_sources.py --write-index`.
+13. Run `python3 scripts/validate_sources.py`.
+14. Commit and push source changes only.
 
 Do not edit generated root HTML pages, `_site/`, or `pagefind/` by hand.
 
@@ -131,24 +133,25 @@ Current automation memory file:
 /Users/talraviv/.codex/automations/daily-democracy-paper-additions/memory.md
 ```
 
-Current automation state at handoff:
+Current automation state:
 
 - Automation name: `Daily democracy paper additions`
-- Status: `PAUSED`
-- Schedule: daily at 05:00 Asia/Jerusalem
-- Working directory in the automation: top-level `DemocracyWebSite`, then the prompt instructs it to work in `github_pages_publish`
+- Status: `ACTIVE`
+- Schedule: daily at 04:00 Asia/Jerusalem
+- Working directory in the automation: live local repository `/Users/talraviv/Documents/DemocracyWebSite/github_pages_publish`
+- Execution environment: `local`, so failed runs leave recoverable edits in the normal checkout
 - Model requested: `gpt-5.5`
 - Reasoning effort: `xhigh`
 
 A ready-to-use prompt based on the current automation is copied into `AUTOMATION_PROMPT.md` for recreation in the new account. The memory file itself is not in this repo; if preserving run history matters, copy the local memory file or summarize its latest entries into the new account's automation memory.
 
-Latest known automation run added three papers and pushed commit `2224e88`:
+Latest recovered automation run added three papers and pushed commit `2ae0a97`:
 
-- Sommer, Colson, and Schmidt - judicial revolution/reconceptualized democracy.
-- Navot and Goldshmidt - state deconstruction.
-- Arad and Freedman - Knesset democracy framings.
+- Shuman, Cohen-Eick, Knowles, and Halperin - disruptive protests and democratic backsliding.
+- Suzin - ultra-Orthodox civil society organizations and democracy.
+- Salzberger - judicial appointments, law, and politics.
 
-The GitHub Pages workflow run for that commit succeeded.
+The automation has since been redesigned to consume `paper_queue.csv` before doing any new broad paper search.
 
 ## New Account Setup Checklist
 

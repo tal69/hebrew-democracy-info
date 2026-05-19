@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import sys
@@ -15,7 +16,9 @@ ROOT = Path(__file__).resolve().parents[1]
 PAPERS_DIR = ROOT / "_papers"
 DATA_DIR = ROOT / "_data"
 PAPER_INDEX_PATH = DATA_DIR / "paper_index.json"
+PAPER_QUEUE_PATH = ROOT / "paper_queue.csv"
 ARTICLE_IMAGE_SIZE = (800, 600)
+QUEUE_REQUIRED_COLUMNS = ("paper_name", "authors", "doi", "topic")
 
 REQUIRED_PAPER_KEYS = {
     "layout",
@@ -181,6 +184,20 @@ def canonical_json(data: Any) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
 
+def normalize_text_key(value: Any) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip().lower())
+
+
+def normalize_doi(value: Any) -> str:
+    doi = str(value or "").strip().rstrip("/")
+    doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "https://doi.org/", doi, flags=re.I)
+    return doi.lower()
+
+
+def split_queue_topics(value: str) -> list[str]:
+    return [topic.strip() for topic in re.split(r"[;|]", value) if topic.strip()]
+
+
 def validate_html_links(label: str, html: str, errors: list[str]) -> None:
     parser = LinkParser()
     parser.feed(html)
@@ -251,6 +268,82 @@ def validate_paper(paper: dict[str, Any], topic_ids: set[str], errors: list[str]
             validate_html_links(f"{label} section {index} paragraph {paragraph_index}", str(paragraph), errors)
 
 
+def validate_paper_queue(papers: list[dict[str, Any]], topic_ids: set[str], errors: list[str]) -> None:
+    if not PAPER_QUEUE_PATH.exists():
+        errors.append("paper_queue.csv is missing")
+        return
+
+    try:
+        with PAPER_QUEUE_PATH.open(encoding="utf-8-sig", newline="") as queue_file:
+            reader = csv.DictReader(queue_file)
+            fieldnames = reader.fieldnames or []
+            missing_columns = [column for column in QUEUE_REQUIRED_COLUMNS if column not in fieldnames]
+            if missing_columns:
+                errors.append(f"paper_queue.csv: missing required columns: {', '.join(missing_columns)}")
+                return
+            rows = list(reader)
+    except csv.Error as exc:
+        errors.append(f"paper_queue.csv is not valid CSV: {exc}")
+        return
+
+    existing_titles = {
+        normalize_text_key(paper.get("paperTitle")): paper["_sourcePath"]
+        for paper in papers
+        if normalize_text_key(paper.get("paperTitle"))
+    }
+    existing_dois = {
+        normalize_doi(paper.get("doiUrl")): paper["_sourcePath"]
+        for paper in papers
+        if normalize_doi(paper.get("doiUrl"))
+    }
+    seen_titles: dict[str, int] = {}
+    seen_dois: dict[str, int] = {}
+
+    for row_number, row in enumerate(rows, start=2):
+        if row.get(None):
+            errors.append(f"paper_queue.csv row {row_number}: too many CSV fields")
+            continue
+
+        paper_name = str(row.get("paper_name", "")).strip()
+        authors = str(row.get("authors", "")).strip()
+        doi = str(row.get("doi", "")).strip()
+        topic_value = str(row.get("topic", "")).strip()
+
+        if not paper_name:
+            errors.append(f"paper_queue.csv row {row_number}: paper_name is required")
+        if not authors:
+            errors.append(f"paper_queue.csv row {row_number}: authors is required")
+        if not doi:
+            errors.append(f"paper_queue.csv row {row_number}: doi is required")
+        if not topic_value:
+            errors.append(f"paper_queue.csv row {row_number}: topic is required")
+
+        title_key = normalize_text_key(paper_name)
+        doi_key = normalize_doi(doi)
+        if title_key:
+            if title_key in existing_titles:
+                errors.append(
+                    f"paper_queue.csv row {row_number}: paper_name already exists in "
+                    f"{existing_titles[title_key].relative_to(ROOT)}"
+                )
+            if title_key in seen_titles:
+                errors.append(f"paper_queue.csv row {row_number}: duplicate paper_name also used on row {seen_titles[title_key]}")
+            seen_titles.setdefault(title_key, row_number)
+        if doi_key:
+            if doi_key in existing_dois:
+                errors.append(
+                    f"paper_queue.csv row {row_number}: doi already exists in "
+                    f"{existing_dois[doi_key].relative_to(ROOT)}"
+                )
+            if doi_key in seen_dois:
+                errors.append(f"paper_queue.csv row {row_number}: duplicate doi also used on row {seen_dois[doi_key]}")
+            seen_dois.setdefault(doi_key, row_number)
+
+        for topic_id in split_queue_topics(topic_value):
+            if topic_id not in topic_ids:
+                errors.append(f"paper_queue.csv row {row_number}: unknown topic id {topic_id}")
+
+
 def validate_sources(write_index: bool) -> int:
     errors: list[str] = []
 
@@ -301,6 +394,8 @@ def validate_sources(write_index: bool) -> int:
                 errors.append(f"{source_path.relative_to(ROOT)}: duplicate {key} also used by {values[value].relative_to(ROOT)}")
             else:
                 values[value] = source_path
+
+    validate_paper_queue(papers, topic_ids, errors)
 
     paper_count = site_data.get("paperCount")
     if paper_count is not None and paper_count != len(papers):

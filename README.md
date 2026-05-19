@@ -10,6 +10,7 @@ The repository source is now Jekyll content, not hand-edited generated HTML:
 
 - `_papers/*.md` - one Markdown/front-matter source file per paper summary.
 - `Authors.MD` - optional preferred-author list for the nightly scan. Add author names, affiliations, public email addresses, ORCIDs, official profile URLs, or search notes there when new publications by specific researchers should be prioritized.
+- `paper_queue.csv` - editable nightly queue of upcoming papers. It uses `paper_name,authors,doi,topic` columns; the nightly automation consumes the first 3 rows and removes them after the corresponding paper pages are added.
 - `_data/site.json` - site-level settings.
 - `_data/topics.json` - topic taxonomy and topic metadata. Paper membership is read from each paper's `topics` list.
 - `_data/paper_index.json` - compact generated index for duplicate checks and nightly updates. Regenerate it from `_papers/*.md`; do not edit it manually.
@@ -19,9 +20,9 @@ The repository source is now Jekyll content, not hand-edited generated HTML:
 - `assets/topic-icons/` and `html_qa/` - topic icons and article images.
 - `scripts/validate_sources.py` - source validator and paper-index generator.
 
-Codex nightly updates should read `Authors.MD` first, then use `_data/paper_index.json` for duplicate checks. If `Authors.MD` lists preferred authors, the scan should first look for recent, relevant, non-duplicate publications by those authors and prioritize them over equally suitable papers by unlisted authors. A listed author is only a priority signal; every added paper must still fit the site's subject scope and pass the same source-quality checks.
+Codex nightly updates should read `paper_queue.csv` first, then use `_data/paper_index.json` for duplicate checks. If the queue has at least 3 rows, the nightly job should not do a broad discovery scan; it should use the first 3 queued papers, add the paper pages, then remove those consumed rows from the CSV in the same commit. If the queue has fewer than 3 rows at the start, Codex should prepare the next 30 relevant non-duplicate queued papers using the same criteria, with `Authors.MD` as a priority signal, before consuming the first 3 rows.
 
-After selecting papers, Codex nightly updates should add new papers as `_papers/*.md` files, add or reuse images, update `image_catalog.json`, regenerate `_data/paper_index.json`, and then commit/push. Update `_data/topics.json` only when adding or changing a topic. They should not edit generated HTML pages manually.
+After selecting papers, Codex nightly updates should add new papers as `_papers/*.md` files, add or reuse images, update `image_catalog.json`, update `paper_queue.csv`, regenerate `_data/paper_index.json`, and then commit/push. Update `_data/topics.json` only when adding or changing a topic. They should not edit generated HTML pages manually.
 
 Each paper source has a stable `sortKey`. New papers should receive larger `sortKey` values, such as `YYYYMMDD0001`, `YYYYMMDD0002`, and `YYYYMMDD0003`, so the newest papers sort first without rewriting older paper files.
 
@@ -58,4 +59,4 @@ Check source consistency before committing:
 python3 scripts/validate_sources.py
 ```
 
-The generated `_site/` directory and `pagefind/` output are build artifacts and are not committed.
+This also checks `paper_queue.csv` for duplicate queued titles/DOIs, queue entries already present on the site, and invalid topic IDs. The generated `_site/` directory and `pagefind/` output are build artifacts and are not committed.
