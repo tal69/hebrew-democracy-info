@@ -9,8 +9,8 @@ Prepared on 2026-05-17 for continuing this project from another OpenAI Codex acc
 - Live site: `https://tal69.github.io/hebrew-democracy-info/`
 - Source directory on this machine: `/Users/talraviv/Documents/DemocracyWebSite/github_pages_publish`
 - Content source commit at handoff start: `2224e881af3e`
-- Current content count: 33 paper summaries, 5 topics.
-- Latest source validation after queue setup: `python3 scripts/validate_sources.py` passed with 33 papers and 5 topics.
+- Current content count: 36 paper summaries, 5 topics.
+- Latest source validation after queue setup: `python3 scripts/validate_sources.py` passed with 36 papers and 5 topics.
 
 This is a Jekyll source repository. Generated pages are built by GitHub Actions and should not be maintained manually.
 
@@ -26,6 +26,7 @@ The site is right-to-left Hebrew, uses shared Jekyll layouts, includes Pagefind 
 - `AGENTS.md` - short instructions for future Codex agents.
 - `Authors.MD` - optional preferred-author list for nightly scans.
 - `paper_queue.csv` - editable queue of upcoming nightly papers; nightly automation consumes the first 3 rows and removes them after adding those papers.
+- `suggest_queue.csv` - visitor suggestion queue populated by the paper suggestion endpoint; nightly automation reviews at most the first pending row and removes the processed row whether accepted or rejected.
 - `_papers/*.md` - one paper summary per Markdown/front matter file.
 - `_data/site.json` - site-level settings, including `homepageLatestCount`, `topicPageSize`, `lastUpdated`, image-version labels, and the standard disclaimer.
 - `_data/topics.json` - topic taxonomy. Paper membership is read from each paper file's `topics` list.
@@ -34,9 +35,11 @@ The site is right-to-left Hebrew, uses shared Jekyll layouts, includes Pagefind 
 - `_includes/analytics.html` - site-wide GoatCounter snippet.
 - `_includes/site_logo.html` - centered split CARRD/Tel Aviv University logo.
 - `assets/css/site.css` - shared styling.
+- `assets/js/suggest-paper.js` - public paper suggestion form behavior.
 - `assets/topic-icons/` - topic icons.
 - `html_qa/` - paper graphics, currently expected to be 800x600 landscape JPEGs.
 - `image_catalog.json` - internal metadata for image reuse and homepage-image avoidance.
+- `workers/suggest-paper-worker.js` - Cloudflare Worker reference endpoint for receiving public suggestions and appending to `suggest_queue.csv`.
 - `scripts/validate_sources.py` - main validator and paper-index generator.
 - `.github/workflows/pages.yml` - GitHub Pages build and deploy workflow.
 - `todo.md` - user-maintained project task list; track and commit changes.
@@ -67,21 +70,22 @@ Local Jekyll may fail on this machine if Ruby/Bundler is not configured. Do not 
 
 Use this sequence for manual or automated paper additions:
 
-1. Read `README.md`, `paper_queue.csv`, `Authors.MD`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
-2. For nightly runs, select the first 3 rows of `paper_queue.csv`; only search for a new 30-paper queue when fewer than 3 queued rows are available at the start.
-3. Check `_data/paper_index.json` and `paper_queue.csv` for duplicate DOI, slug, title, author, and theme.
-4. Add a new `_papers/*.md` file with JSON front matter between `---` markers.
-5. Give new papers larger numeric `sortKey` values than existing records, usually `YYYYMMDD0001`, `YYYYMMDD0002`, etc. The index sorts descending by `sortKey`.
-6. Assign one or more existing topic IDs from `_data/topics.json`.
-7. Link author names only when the author identity is certain and the link is an official academic profile or clearly maintained academic home page.
-8. Make external paper and author links open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` in stored HTML fields.
-9. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
-10. Update `image_catalog.json`.
-11. Remove consumed rows from `paper_queue.csv`.
-12. Bump `_data/site.json` `lastUpdated` and `cacheVersion` so returning browsers refresh after deploy. Set `datePublished` only when the page is created; use `dateModified`/`lastUpdatedHe` for later edits. `newBadgeDays` controls how long `חדש!` appears after `datePublished`.
-13. Run `python3 scripts/validate_sources.py --write-index`.
-14. Run `python3 scripts/validate_sources.py`.
-15. Commit and push source changes only.
+1. Read `README.md`, `suggest_queue.csv`, `paper_queue.csv`, `Authors.MD`, `_data/paper_index.json`, `_data/topics.json`, `_data/site.json`, and `image_catalog.json`.
+2. For nightly runs, review at most the first pending row of `suggest_queue.csv` first. Accept it only if it fits the site criteria and liberal-democratic spirit and is not a duplicate; remove the processed suggestion row whether accepted or rejected.
+3. Fill the remaining normal 3-paper nightly batch from the first rows of `paper_queue.csv`; only search for a new 30-paper queue when fewer than the needed curated rows are available at the start.
+4. Check `_data/paper_index.json`, `paper_queue.csv`, and `suggest_queue.csv` for duplicate DOI, slug, title, author, and theme.
+5. Add a new `_papers/*.md` file with JSON front matter between `---` markers.
+6. Give new papers larger numeric `sortKey` values than existing records, usually `YYYYMMDD0001`, `YYYYMMDD0002`, etc. The index sorts descending by `sortKey`.
+7. Assign one or more existing topic IDs from `_data/topics.json`.
+8. Link author names only when the author identity is certain and the link is an official academic profile or clearly maintained academic home page.
+9. Make external paper and author links open in a new tab with `target="_blank"` and `rel="noopener noreferrer"` in stored HTML fields.
+10. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
+11. Update `image_catalog.json`.
+12. Remove consumed rows from `suggest_queue.csv` and/or `paper_queue.csv`.
+13. Bump `_data/site.json` `lastUpdated` and `cacheVersion` so returning browsers refresh after deploy. Set `datePublished` only when the page is created; use `dateModified`/`lastUpdatedHe` for later edits. `newBadgeDays` controls how long `חדש!` appears after `datePublished`.
+14. Run `python3 scripts/validate_sources.py --write-index`.
+15. Run `python3 scripts/validate_sources.py`.
+16. Commit and push source changes only.
 
 Do not edit generated root HTML pages, `_site/`, or `pagefind/` by hand.
 
@@ -118,6 +122,7 @@ Before creating a new image, check `image_catalog.json`. Reuse an existing image
 - Last updated: paper pages show the last-updated value from the source data.
 - Browser refresh: shared page heads load versioned CSS/Pagefind assets and compare the page's `cacheVersion` with `/site-version.json`; stale pages reload once with a `site_version` query parameter.
 - New badge: cards show the red `חדש!` label for papers whose `datePublished` page-creation date is inside `_data/site.json` `newBadgeDays`, currently 3 calendar days.
+- Suggest a paper: the homepage footer links to `/suggest-paper.html` with the Hebrew label `הצע מאמר`. The form is English, requires paper title, DOI, submitter name, and email, and redirects home 5 seconds after a successful submission. GitHub Pages needs a server-side endpoint for real CSV writes; configure `_data/site.json` `suggestPaperEndpoint` after deploying `workers/suggest-paper-worker.js`.
 - Accessibility: `accessibility.html` exists; `todo.md` still notes that public accessibility contact details are needed.
 
 ## Nightly Automation Handoff

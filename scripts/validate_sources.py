@@ -17,8 +17,20 @@ PAPERS_DIR = ROOT / "_papers"
 DATA_DIR = ROOT / "_data"
 PAPER_INDEX_PATH = DATA_DIR / "paper_index.json"
 PAPER_QUEUE_PATH = ROOT / "paper_queue.csv"
+SUGGEST_QUEUE_PATH = ROOT / "suggest_queue.csv"
 ARTICLE_IMAGE_SIZE = (800, 600)
 QUEUE_REQUIRED_COLUMNS = ("paper_name", "authors", "doi", "topic")
+SUGGEST_QUEUE_REQUIRED_COLUMNS = (
+    "submitted_date",
+    "submitted_at",
+    "paper_name",
+    "doi",
+    "submitter_name",
+    "submitter_email",
+    "submitter_ip_hash",
+    "status",
+    "notes",
+)
 
 REQUIRED_PAPER_KEYS = {
     "layout",
@@ -353,6 +365,59 @@ def validate_paper_queue(papers: list[dict[str, Any]], topic_ids: set[str], erro
                 errors.append(f"paper_queue.csv row {row_number}: unknown topic id {topic_id}")
 
 
+def validate_suggest_queue(errors: list[str]) -> None:
+    if not SUGGEST_QUEUE_PATH.exists():
+        errors.append("suggest_queue.csv is missing")
+        return
+
+    try:
+        with SUGGEST_QUEUE_PATH.open(encoding="utf-8-sig", newline="") as queue_file:
+            reader = csv.DictReader(queue_file)
+            fieldnames = reader.fieldnames or []
+            missing_columns = [column for column in SUGGEST_QUEUE_REQUIRED_COLUMNS if column not in fieldnames]
+            if missing_columns:
+                errors.append(f"suggest_queue.csv: missing required columns: {', '.join(missing_columns)}")
+                return
+            rows = list(reader)
+    except csv.Error as exc:
+        errors.append(f"suggest_queue.csv is not valid CSV: {exc}")
+        return
+
+    for row_number, row in enumerate(rows, start=2):
+        if row.get(None):
+            errors.append(f"suggest_queue.csv row {row_number}: too many CSV fields")
+            continue
+
+        submitted_date = str(row.get("submitted_date", "")).strip()
+        submitted_at = str(row.get("submitted_at", "")).strip()
+        paper_name = str(row.get("paper_name", "")).strip()
+        doi = str(row.get("doi", "")).strip()
+        submitter_name = str(row.get("submitter_name", "")).strip()
+        submitter_email = str(row.get("submitter_email", "")).strip()
+        submitter_ip_hash = str(row.get("submitter_ip_hash", "")).strip()
+        status = str(row.get("status", "")).strip()
+
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", submitted_date):
+            errors.append(f"suggest_queue.csv row {row_number}: submitted_date must be YYYY-MM-DD")
+        if not submitted_at:
+            errors.append(f"suggest_queue.csv row {row_number}: submitted_at is required")
+        if not paper_name:
+            errors.append(f"suggest_queue.csv row {row_number}: paper_name is required")
+        doi_key = normalize_doi(doi)
+        if not doi:
+            errors.append(f"suggest_queue.csv row {row_number}: doi is required")
+        elif not re.fullmatch(r"(?:https://doi\.org/)?10\.\d{4,9}/\S+", doi_key):
+            errors.append(f"suggest_queue.csv row {row_number}: doi must look like a DOI")
+        if not submitter_name:
+            errors.append(f"suggest_queue.csv row {row_number}: submitter_name is required")
+        if not re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", submitter_email):
+            errors.append(f"suggest_queue.csv row {row_number}: submitter_email must be a valid email address")
+        if not re.fullmatch(r"[0-9a-f]{64}", submitter_ip_hash):
+            errors.append(f"suggest_queue.csv row {row_number}: submitter_ip_hash must be a 64-character SHA-256 hex hash")
+        if status not in {"pending", "hold", "accepted", "rejected"}:
+            errors.append(f"suggest_queue.csv row {row_number}: status must be pending, hold, accepted, or rejected")
+
+
 def validate_sources(write_index: bool) -> int:
     errors: list[str] = []
 
@@ -405,6 +470,7 @@ def validate_sources(write_index: bool) -> int:
                 values[value] = source_path
 
     validate_paper_queue(papers, topic_ids, errors)
+    validate_suggest_queue(errors)
 
     paper_count = site_data.get("paperCount")
     if paper_count is not None and paper_count != len(papers):

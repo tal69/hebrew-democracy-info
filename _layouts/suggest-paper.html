@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  {% assign page_title = page.title | append: " | " | append: site.data.site.siteNameHe %}
+  {% include head.html title=page_title description=page.description type="website" image="HEB_bold.jpg" %}
+  {% assign cache_version = site.data.site.cacheVersion | default: site.data.site.lastUpdated %}
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ page_title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "inLanguage": "en",
+  "url": {{ page.url | absolute_url | jsonify }},
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": {{ site.data.site.siteNameHe | jsonify }},
+    "url": {{ "/" | absolute_url | jsonify }}
+  }
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link suggest-skip-link" href="#main-content">Skip to main content</a>
+  <main class="simple-main suggest-main" id="main-content" tabindex="-1" data-pagefind-body>
+    {% include site_logo.html %}
+    <a class="home-link" href="{{ '/' | relative_url }}" aria-label="Back to homepage" data-pagefind-ignore>
+      {% include home_icon.html %}
+      <span>Back to homepage</span>
+    </a>
+    {{ content }}
+    <footer class="footer-links" data-pagefind-ignore>
+      <a href="{{ '/' | relative_url }}">Back to homepage</a>
+    </footer>
+  </main>
+  <script src="{{ '/assets/js/suggest-paper.js' | relative_url }}?v={{ cache_version | uri_escape }}"></script>
+</body>
+</html>

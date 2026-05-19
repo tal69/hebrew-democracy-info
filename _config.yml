@@ -32,6 +32,8 @@ exclude:
   - README.md
   - todo.md
   - image_catalog.json
+  - suggest_queue.csv
+  - workers/
   - Gemfile
   - Gemfile.lock
   - "*.pyc"
