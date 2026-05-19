@@ -76,11 +76,16 @@
       <h2 class="section-heading" id="latest-heading">חדש באתר</h2>
       <div class="grid" aria-label="שש התמציות האחרונות">
         {% assign papers = site.papers | sort: "sortKey" | reverse %}
+        {% assign new_badge_days = site.data.site.newBadgeDays | default: 3 %}
+        {% assign new_badge_offset_seconds = new_badge_days | minus: 1 | times: 86400 %}
+        {% assign new_badge_cutoff = site.time | date: "%s" | minus: new_badge_offset_seconds | date: "%Y-%m-%d" %}
         {% for paper in papers limit: site.data.site.homepageLatestCount %}
           {% assign show_new = false %}
           {% assign high_priority = false %}
-          {% if forloop.index <= 3 %}
+          {% if paper.dateModified >= new_badge_cutoff %}
             {% assign show_new = true %}
+          {% endif %}
+          {% if forloop.index <= 3 %}
             {% assign high_priority = true %}
           {% endif %}
           {% include paper_card.html paper=paper show_new=show_new high_priority=high_priority %}

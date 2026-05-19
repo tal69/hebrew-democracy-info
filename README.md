@@ -28,6 +28,12 @@ Each paper source has a stable `sortKey`. New papers should receive larger `sort
 
 The shared head includes a cache-refresh check against `site-version.json`. When deployed `cacheVersion` differs from the version in a user's cached page, the browser reloads that page once with a `site_version` query parameter. Use a new `cacheVersion` value for every content deploy, for example `2026-05-20-nightly`.
 
+The red `חדש!` badge is date-based, not position-based. `_data/site.json` `newBadgeDays` controls the window, and cards show the badge when a paper's `dateModified` falls within that many calendar days of the build date.
+
+## Summary Writing Guidance
+
+New paper summaries should follow the admin GEO brief: no model preamble or sign-off; a clear H1-style `titleHe` and H3-style `subtitleHe`; organized metadata for authors, venue, date, volume/issue when available, and DOI/source link; a deeper analytical summary that foregrounds the paper's democratic-liberal, rights, legal, institutional, social, or economic implications; only verified numbers/statistics from the paper or source metadata; 2-3 short translated direct quotes only when source text is available and the quote is important; and at least 10 FAQ-style question/answer sections using realistic search or AI-chat questions.
+
 ## Build and Deploy
 
 GitHub Actions builds and deploys the site:

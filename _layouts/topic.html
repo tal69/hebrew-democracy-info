@@ -72,17 +72,14 @@
 
     <section class="grid" aria-label="תמציות בנושא {{ topic.titleHe | escape }}">
       {% assign all_papers = site.papers | sort: "sortKey" | reverse %}
-      {% assign newest_cutoff = 0 %}
-      {% for newest_paper in all_papers limit: 3 %}
-        {% if forloop.last %}
-          {% assign newest_cutoff = newest_paper.sortKey %}
-        {% endif %}
-      {% endfor %}
+      {% assign new_badge_days = site.data.site.newBadgeDays | default: 3 %}
+      {% assign new_badge_offset_seconds = new_badge_days | minus: 1 | times: 86400 %}
+      {% assign new_badge_cutoff = site.time | date: "%s" | minus: new_badge_offset_seconds | date: "%Y-%m-%d" %}
       {% assign papers = all_papers %}
       {% for paper in papers %}
         {% if paper.topics contains topic.id %}
           {% assign show_new = false %}
-          {% if paper.sortKey >= newest_cutoff %}{% assign show_new = true %}{% endif %}
+          {% if paper.dateModified >= new_badge_cutoff %}{% assign show_new = true %}{% endif %}
           {% include paper_card.html paper=paper show_new=show_new high_priority=false %}
         {% endif %}
       {% endfor %}
