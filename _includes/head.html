@@ -15,5 +15,25 @@
 <meta name="twitter:title" content="{{ include.title | escape }}">
 <meta name="twitter:description" content="{{ include.description | strip_html | escape }}">
 <meta name="twitter:image" content="{{ include.image | default: 'HEB_bold.jpg' | absolute_url }}">
-<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+{% assign cache_version = site.data.site.cacheVersion | default: site.data.site.lastUpdated %}
+<link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ cache_version | uri_escape }}">
+<script>
+(() => {
+  const currentVersion = {{ cache_version | jsonify }};
+  if (!currentVersion || !("fetch" in window) || !("URL" in window)) return;
+  const versionUrl = {{ '/site-version.json' | relative_url | jsonify }};
+  const separator = versionUrl.includes("?") ? "&" : "?";
+  fetch(`${versionUrl}${separator}t=${Date.now()}`, { cache: "no-store", credentials: "same-origin" })
+    .then((response) => response.ok ? response.json() : null)
+    .then((data) => {
+      const latestVersion = data && data.cacheVersion;
+      if (!latestVersion || latestVersion === currentVersion) return;
+      const pageUrl = new URL(window.location.href);
+      if (pageUrl.searchParams.get("site_version") === latestVersion) return;
+      pageUrl.searchParams.set("site_version", latestVersion);
+      window.location.replace(pageUrl.toString());
+    })
+    .catch(() => {});
+})();
+</script>
 {% include analytics.html %}

@@ -22,9 +22,11 @@ The repository source is now Jekyll content, not hand-edited generated HTML:
 
 Codex nightly updates should read `paper_queue.csv` first, then use `_data/paper_index.json` for duplicate checks. If the queue has at least 3 rows, the nightly job should not do a broad discovery scan; it should use the first 3 queued papers, add the paper pages, then remove those consumed rows from the CSV in the same commit. If the queue has fewer than 3 rows at the start, Codex should prepare the next 30 relevant non-duplicate queued papers using the same criteria, with `Authors.MD` as a priority signal, before consuming the first 3 rows.
 
-After selecting papers, Codex nightly updates should add new papers as `_papers/*.md` files, add or reuse images, update `image_catalog.json`, update `paper_queue.csv`, regenerate `_data/paper_index.json`, and then commit/push. Update `_data/topics.json` only when adding or changing a topic. They should not edit generated HTML pages manually.
+After selecting papers, Codex nightly updates should add new papers as `_papers/*.md` files, add or reuse images, update `image_catalog.json`, update `paper_queue.csv`, bump `_data/site.json` `lastUpdated` and `cacheVersion`, regenerate `_data/paper_index.json`, and then commit/push. Update `_data/topics.json` only when adding or changing a topic. They should not edit generated HTML pages manually.
 
 Each paper source has a stable `sortKey`. New papers should receive larger `sortKey` values, such as `YYYYMMDD0001`, `YYYYMMDD0002`, and `YYYYMMDD0003`, so the newest papers sort first without rewriting older paper files.
+
+The shared head includes a cache-refresh check against `site-version.json`. When deployed `cacheVersion` differs from the version in a user's cached page, the browser reloads that page once with a `site_version` query parameter. Use a new `cacheVersion` value for every content deploy, for example `2026-05-20-nightly`.
 
 ## Build and Deploy
 

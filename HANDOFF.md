@@ -78,9 +78,10 @@ Use this sequence for manual or automated paper additions:
 9. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
 10. Update `image_catalog.json`.
 11. Remove consumed rows from `paper_queue.csv`.
-12. Run `python3 scripts/validate_sources.py --write-index`.
-13. Run `python3 scripts/validate_sources.py`.
-14. Commit and push source changes only.
+12. Bump `_data/site.json` `lastUpdated` and `cacheVersion` so returning browsers refresh after deploy.
+13. Run `python3 scripts/validate_sources.py --write-index`.
+14. Run `python3 scripts/validate_sources.py`.
+15. Commit and push source changes only.
 
 Do not edit generated root HTML pages, `_site/`, or `pagefind/` by hand.
 
@@ -115,6 +116,7 @@ Before creating a new image, check `image_catalog.json`. Reuse an existing image
 - Logo: `_includes/site_logo.html` uses the transparent CARRD/Tel Aviv University image. The upper part links to `https://carrdtau.sites.tau.ac.il/` in the same tab; the lower TAU part links to `https://www.tau.ac.il/` in the same tab.
 - Paper footer: the full Hebrew disclaimer is stored in `_data/site.json` as `readingNoteHe`.
 - Last updated: paper pages show the last-updated value from the source data.
+- Browser refresh: shared page heads load versioned CSS/Pagefind assets and compare the page's `cacheVersion` with `/site-version.json`; stale pages reload once with a `site_version` query parameter.
 - Accessibility: `accessibility.html` exists; `todo.md` still notes that public accessibility contact details are needed.
 
 ## Nightly Automation Handoff

@@ -4,7 +4,8 @@
   {% assign title = site.data.site.homeTitleHe %}
   {% assign description = site.data.site.homeDescriptionHe %}
   {% include head.html title=title description=description type="website" image="HEB_bold.jpg" %}
-  <link href="{{ '/pagefind/pagefind-ui.css' | relative_url }}" rel="stylesheet">
+  {% assign cache_version = site.data.site.cacheVersion | default: site.data.site.lastUpdated %}
+  <link href="{{ '/pagefind/pagefind-ui.css' | relative_url }}?v={{ cache_version | uri_escape }}" rel="stylesheet">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -90,7 +91,7 @@
       <a href="{{ '/accessibility.html' | relative_url }}">הצהרת נגישות</a>
     </footer>
   </main>
-  <script src="{{ '/pagefind/pagefind-ui.js' | relative_url }}"></script>
+  <script src="{{ '/pagefind/pagefind-ui.js' | relative_url }}?v={{ cache_version | uri_escape }}"></script>
   <script>
     window.addEventListener("DOMContentLoaded", () => {
       window.siteSearch = new PagefindUI({

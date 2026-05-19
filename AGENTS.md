@@ -13,6 +13,7 @@ For paper additions:
 - Use existing topic IDs from `_data/topics.json` unless a durable new topic is really needed.
 - Add or reuse 800x600 landscape JPEG paper images and keep `image_catalog.json` current.
 - Keep `paper_queue.csv` in CSV format with `paper_name,authors,doi,topic` columns. The `topic` value should use existing topic IDs.
+- Bump `_data/site.json` `lastUpdated` and `cacheVersion` on each successful content update so returning browsers refresh stale HTML/CSS/Pagefind assets.
 - Regenerate the compact index with `python3 scripts/validate_sources.py --write-index`.
 - Validate with `python3 scripts/validate_sources.py` before committing; this also checks the paper queue for duplicate DOI/title and invalid topic IDs.
 
