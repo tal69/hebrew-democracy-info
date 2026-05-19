@@ -1,0 +1,88 @@
+---
+{
+  "version": 1,
+  "file": "democracy_haredi_civil_society_democracy_summary_he.html",
+  "slug": "democracy_haredi_civil_society_democracy_summary_he",
+  "order": 32,
+  "titleHe": "האם ארגוני חברה אזרחית חרדיים מקדמים דמוקרטיזציה?",
+  "subtitleHe": "תמצית עברית לקהל הרחב בישראל",
+  "descriptionHe": "המאמר בוחן ארגוני חברה אזרחית חדשים בחברה החרדית בישראל ומראה שהם אינם בהכרח מקדמים ליברליזציה או דמוקרטיזציה.",
+  "summaryHe": "מחקר על האופן שבו ארגוני חברה אזרחית חרדיים יכולים לשמר גבולות קהילתיים במקום לקדם ליברליזציה.",
+  "authorsCardHe": "אשר סוזין",
+  "paperTitle": "Do Civil Society Organizations Promote Democracy? The Case of the Ultra-Orthodox in Israel",
+  "authorsHtml": "<a href=\"https://cris.haifa.ac.il/en/persons/asher-yair-suzin/\" target=\"_blank\" rel=\"noopener noreferrer\">Asher Suzin</a>",
+  "journal": "Political Science Quarterly",
+  "dateText": "פורסם אונליין: 26 בפברואר 2025",
+  "doiUrl": "https://doi.org/10.1093/psquar/qqaf009",
+  "doiLabel": "https://doi.org/10.1093/psquar/qqaf009",
+  "authors": [
+    {
+      "@type": "Person",
+      "name": "אשר סוזין",
+      "url": "https://cris.haifa.ac.il/en/persons/asher-yair-suzin/"
+    }
+  ],
+  "sourceAuthors": [
+    {
+      "@type": "Person",
+      "name": "Asher Suzin"
+    }
+  ],
+  "topics": [
+    "institutions-civil-society-public-service",
+    "rights-equality-minorities"
+  ],
+  "keywords": [
+    "חברה אזרחית",
+    "דמוקרטיזציה",
+    "חרדים",
+    "ליברליזציה"
+  ],
+  "image": {
+    "src": "html_qa/democracy_majority_nationalism_equal_citizenship_summary_he.jpg",
+    "version": "800x600-landscape",
+    "altHe": "איור על קבוצות חברתיות, ייצוג אזרחי ושוויון במרחב דמוקרטי"
+  },
+  "dateModified": "2026-05-19",
+  "lastUpdatedHe": "19 במאי 2026",
+  "oneLinerHtml": "שורה תחתונה: המאמר מאתגר את ההנחה שכל צמיחה של חברה אזרחית מחזקת דמוקרטיה, ומראה שבמקרים מסוימים היא יכולה לשמר גבולות קהילתיים שמרניים.",
+  "sections": [
+    {
+      "headingHe": "מה נבדק במחקר",
+      "paragraphsHtml": [
+        "אשר סוזין בוחן ארגוני חברה אזרחית חדשים שהתפתחו בחברה החרדית בישראל בעשורים האחרונים.",
+        "המחקר שואל האם ארגונים אלה פועלים כבית ספר לדמוקרטיה, כלומר מקדמים השתתפות, אזרחות, שוויון וליברליזציה, או שהם ממלאים תפקיד אחר.",
+        "המאמר מבוסס על ארבעים ראיונות עומק עם מנהלים ומייסדים של ארגונים ויוזמות בחברה החרדית, ומנתח את האופן שבו הם מבינים את תפקידם הציבורי."
+      ]
+    },
+    {
+      "headingHe": "הממצאים המרכזיים",
+      "paragraphsHtml": [
+        "המחקר מוצא שתי עמדות עיקריות בקרב הפעילים: קול אזרחי-דמוקרטי קטן יחסית, וקול שמרני דומיננטי יותר.",
+        "לפי הממצאים, רבים מן הארגונים אינם שואפים לשלב את החברה החרדית בתוך מרחב ליברלי רחב, אלא לעזור לחבריה להתמודד עם צבא, אקדמיה, עבודה וטכנולוגיה בלי לוותר על גבולות הקהילה.",
+        "במקום לראות בחברה האזרחית כוח שמוביל בהכרח לפתיחות ולדמוקרטיזציה, המאמר מראה שהיא יכולה גם לשמש כלי לשימור זהות, סמכות וגבולות דתיים."
+      ]
+    },
+    {
+      "headingHe": "למה זה חשוב לישראל",
+      "paragraphsHtml": [
+        "בישראל מרבים לדבר על חברה אזרחית ככוח שמחזק דמוקרטיה, מפקח על המדינה ומרחיב השתתפות ציבורית.",
+        "המאמר מוסיף מורכבות: עצם קיומם של ארגונים אזרחיים אינו מבטיח שהם יקדמו ערכים ליברליים, שוויון או אזרחות דמוקרטית משותפת.",
+        "הדבר חשוב במיוחד בחברה רב-קהילתית, שבה ארגונים יכולים לפתוח ערוצים להשתתפות, אבל גם לחזק הפרדה ולשמר נורמות שאינן תמיד עולות בקנה אחד עם דמוקרטיה ליברלית."
+      ]
+    },
+    {
+      "headingHe": "במילים פשוטות",
+      "paragraphsHtml": [
+        "לא כל ארגון אזרחי הוא בהכרח מנוע של דמוקרטיזציה.",
+        "השאלה הדמוקרטית היא לא רק האם אנשים מתארגנים, אלא אילו ערכים ההתארגנות שלהם מחזקת."
+      ]
+    }
+  ],
+  "layout": "paper",
+  "title": "האם ארגוני חברה אזרחית חרדיים מקדמים דמוקרטיזציה?",
+  "permalink": "/democracy_haredi_civil_society_democracy_summary_he.html",
+  "paper_url": "democracy_haredi_civil_society_democracy_summary_he.html",
+  "sortKey": 202605190002
+}
+---
