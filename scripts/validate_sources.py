@@ -33,6 +33,7 @@ REQUIRED_PAPER_KEYS = {
     "topics",
     "keywords",
     "image",
+    "datePublished",
     "dateModified",
     "lastUpdatedHe",
     "oneLinerHtml",
@@ -168,6 +169,7 @@ def build_paper_index(papers: list[dict[str, Any]]) -> dict[str, Any]:
                     "src": image.get("src", ""),
                     "altHe": image.get("altHe", ""),
                 },
+                "datePublished": paper["datePublished"],
                 "dateModified": paper["dateModified"],
                 "summaryHe": paper["summaryHe"],
             }
@@ -231,6 +233,13 @@ def validate_paper(paper: dict[str, Any], topic_ids: set[str], errors: list[str]
         errors.append(f"{label}: permalink should be /{expected_file}")
     if not isinstance(paper.get("sortKey"), int):
         errors.append(f"{label}: sortKey must be an integer")
+    else:
+        expected_published = str(paper["sortKey"])[:8]
+        expected_published = f"{expected_published[:4]}-{expected_published[4:6]}-{expected_published[6:8]}"
+        if paper.get("datePublished") != expected_published:
+            errors.append(f"{label}: datePublished should match sortKey date {expected_published}")
+    if paper.get("datePublished") and paper.get("dateModified") and paper["dateModified"] < paper["datePublished"]:
+        errors.append(f"{label}: dateModified cannot be earlier than datePublished")
 
     topics = paper.get("topics")
     if not isinstance(topics, list) or not topics:

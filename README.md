@@ -28,7 +28,7 @@ Each paper source has a stable `sortKey`. New papers should receive larger `sort
 
 The shared head includes a cache-refresh check against `site-version.json`. When deployed `cacheVersion` differs from the version in a user's cached page, the browser reloads that page once with a `site_version` query parameter. Use a new `cacheVersion` value for every content deploy, for example `2026-05-20-nightly`.
 
-The red `חדש!` badge is date-based, not position-based. `_data/site.json` `newBadgeDays` controls the window, and cards show the badge when a paper's `dateModified` falls within that many calendar days of the build date.
+Paper pages distinguish creation from later edits. `datePublished` is the date the page was first created on this site and should not change later; `dateModified` and `lastUpdatedHe` describe the latest edit/update. The red `חדש!` badge is creation-date based, not position-based: `_data/site.json` `newBadgeDays` controls the window, and cards show the badge only when `datePublished` falls within that many calendar days of the build date.
 
 ## Summary Writing Guidance
 

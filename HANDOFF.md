@@ -78,7 +78,7 @@ Use this sequence for manual or automated paper additions:
 9. Add or reuse an 800x600 landscape JPEG in `html_qa/`.
 10. Update `image_catalog.json`.
 11. Remove consumed rows from `paper_queue.csv`.
-12. Bump `_data/site.json` `lastUpdated` and `cacheVersion` so returning browsers refresh after deploy. Keep new paper `dateModified` values on the site publication date; `newBadgeDays` controls how long `חדש!` appears.
+12. Bump `_data/site.json` `lastUpdated` and `cacheVersion` so returning browsers refresh after deploy. Set `datePublished` only when the page is created; use `dateModified`/`lastUpdatedHe` for later edits. `newBadgeDays` controls how long `חדש!` appears after `datePublished`.
 13. Run `python3 scripts/validate_sources.py --write-index`.
 14. Run `python3 scripts/validate_sources.py`.
 15. Commit and push source changes only.
@@ -117,7 +117,7 @@ Before creating a new image, check `image_catalog.json`. Reuse an existing image
 - Paper footer: the full Hebrew disclaimer is stored in `_data/site.json` as `readingNoteHe`.
 - Last updated: paper pages show the last-updated value from the source data.
 - Browser refresh: shared page heads load versioned CSS/Pagefind assets and compare the page's `cacheVersion` with `/site-version.json`; stale pages reload once with a `site_version` query parameter.
-- New badge: cards show the red `חדש!` label for papers whose `dateModified` is inside `_data/site.json` `newBadgeDays`, currently 3 calendar days.
+- New badge: cards show the red `חדש!` label for papers whose `datePublished` page-creation date is inside `_data/site.json` `newBadgeDays`, currently 3 calendar days.
 - Accessibility: `accessibility.html` exists; `todo.md` still notes that public accessibility contact details are needed.
 
 ## Nightly Automation Handoff

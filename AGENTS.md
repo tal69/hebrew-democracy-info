@@ -14,7 +14,7 @@ For paper additions:
 - Add or reuse 800x600 landscape JPEG paper images and keep `image_catalog.json` current.
 - Keep `paper_queue.csv` in CSV format with `paper_name,authors,doi,topic` columns. The `topic` value should use existing topic IDs.
 - Bump `_data/site.json` `lastUpdated` and `cacheVersion` on each successful content update so returning browsers refresh stale HTML/CSS/Pagefind assets.
-- Keep each new paper's `dateModified` equal to its site publication date; the red `חדש!` badge is shown for papers inside `_data/site.json` `newBadgeDays`.
+- Keep each new paper's `datePublished` equal to its site creation date and do not change it later; use `dateModified`/`lastUpdatedHe` for later edits. The red `חדש!` badge is based on `datePublished` and `_data/site.json` `newBadgeDays`.
 - New summaries should follow the admin GEO brief: deeper democratic-liberal analysis, verified numbers only, 2-3 short translated quotes when source text supports them, and at least 10 FAQ-style question/answer sections.
 - Regenerate the compact index with `python3 scripts/validate_sources.py --write-index`.
 - Validate with `python3 scripts/validate_sources.py` before committing; this also checks the paper queue for duplicate DOI/title and invalid topic IDs.

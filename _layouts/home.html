@@ -82,7 +82,8 @@
         {% for paper in papers limit: site.data.site.homepageLatestCount %}
           {% assign show_new = false %}
           {% assign high_priority = false %}
-          {% if paper.dateModified >= new_badge_cutoff %}
+          {% assign paper_created = paper.datePublished | default: paper.dateModified %}
+          {% if paper_created >= new_badge_cutoff %}
             {% assign show_new = true %}
           {% endif %}
           {% if forloop.index <= 3 %}

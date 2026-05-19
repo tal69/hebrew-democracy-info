@@ -79,7 +79,8 @@
       {% for paper in papers %}
         {% if paper.topics contains topic.id %}
           {% assign show_new = false %}
-          {% if paper.dateModified >= new_badge_cutoff %}{% assign show_new = true %}{% endif %}
+          {% assign paper_created = paper.datePublished | default: paper.dateModified %}
+          {% if paper_created >= new_badge_cutoff %}{% assign show_new = true %}{% endif %}
           {% include paper_card.html paper=paper show_new=show_new high_priority=false %}
         {% endif %}
       {% endfor %}
