@@ -1,0 +1,33 @@
+---
+permalink: /404.html
+---
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redirecting to demokratia-info.github.io</title>
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url=https://demokratia-info.github.io/">
+  <script>
+  (() => {
+    const newOrigin = "https://demokratia-info.github.io";
+    const oldBase = "/hebrew-democracy-info";
+    let path = window.location.pathname;
+    if (path === oldBase || path === `${oldBase}/`) {
+      path = "/";
+    } else if (path.startsWith(`${oldBase}/`)) {
+      path = path.slice(oldBase.length);
+    }
+    if (!path.startsWith("/")) path = `/${path}`;
+    window.location.replace(`${newOrigin}${path}${window.location.search}${window.location.hash}`);
+  })();
+  </script>
+</head>
+<body>
+  <p lang="en" dir="ltr">
+    This site has moved to
+    <a href="https://demokratia-info.github.io/">https://demokratia-info.github.io/</a>.
+  </p>
+</body>
+</html>
