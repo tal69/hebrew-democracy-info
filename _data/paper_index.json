@@ -1,8 +1,91 @@
 {
   "version": 1,
   "description": "Compact duplicate-checking and nightly-update index generated from _papers/*.md. Do not edit by hand; run scripts/validate_sources.py --write-index.",
-  "paperCount": 36,
+  "paperCount": 39,
   "papers": [
+    {
+      "slug": "democracy_reasonableness_standard_rule_of_law_summary_he",
+      "file": "democracy_reasonableness_standard_rule_of_law_summary_he.html",
+      "permalink": "/democracy_reasonableness_standard_rule_of_law_summary_he.html",
+      "sortKey": 202605200003,
+      "titleHe": "מה קורה לדמוקרטיה כשמבטלים את חובת הסבירות?",
+      "paperTitle": "Releasing the Government from Acting Reasonably; or, the Government Says Goodbye to Reasonableness",
+      "authorsCardHe": "מרדכי קרמניצר",
+      "sourceAuthors": [
+        "Mordechai Kremnitzer"
+      ],
+      "journal": "Israel Law Review",
+      "dateText": "פורסם אונליין: 6 באוקטובר 2023; גיליון: נובמבר 2023; כרך 56(3), עמ׳ 343-354",
+      "doiUrl": "https://doi.org/10.1017/S0021223723000146",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service",
+        "rights-equality-minorities"
+      ],
+      "image": {
+        "src": "html_qa/democracy_first_brick_democratic_erosion_summary_he.jpg",
+        "altHe": "איור על עילת הסבירות, בית משפט ושחיקה מוקדמת של שלטון החוק"
+      },
+      "datePublished": "2026-05-20",
+      "dateModified": "2026-05-20",
+      "summaryHe": "ביטול עילת הסבירות מחליש את חובת הממשלה לפעול בהגינות, פוגע בשומרי הסף ומסכן מינויים, זכויות ושלטון חוק."
+    },
+    {
+      "slug": "democracy_high_court_reform_desirable_summary_he",
+      "file": "democracy_high_court_reform_desirable_summary_he.html",
+      "permalink": "/democracy_high_court_reform_desirable_summary_he.html",
+      "sortKey": 202605200002,
+      "titleHe": "איך מתקנים את בג״ץ בלי להפוך אותו למוסד מפלגתי?",
+      "paperTitle": "Reforming the Israeli High Court of Justice: Proposed versus Desirable",
+      "authorsCardHe": "יהושע (שוקי) שגב",
+      "sourceAuthors": [
+        "Joshua Segev"
+      ],
+      "journal": "Israel Law Review",
+      "dateText": "פורסם אונליין: 5 בדצמבר 2023; גיליון: נובמבר 2023; כרך 56(3), עמ׳ 440-455",
+      "doiUrl": "https://doi.org/10.1017/S0021223723000237",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "institutions-civil-society-public-service",
+        "democratic-backsliding-populism"
+      ],
+      "image": {
+        "src": "html_qa/democracy_judicial_overhaul_populist_picture_summary_he.jpg",
+        "altHe": "איור על רפורמה בבג״ץ, עצמאות שיפוטית ואיזונים מוסדיים"
+      },
+      "datePublished": "2026-05-20",
+      "dateModified": "2026-05-20",
+      "summaryHe": "רפורמה דמוקרטית בבג״ץ צריכה לטפל בעובדות, בהרכבי שופטים, בזכות עמידה ובמינוי שופטים בלי למסור את בית המשפט לשליטה פוליטית."
+    },
+    {
+      "slug": "democracy_israel_constitutional_moment_admin_law_summary_he",
+      "file": "democracy_israel_constitutional_moment_admin_law_summary_he.html",
+      "permalink": "/democracy_israel_constitutional_moment_admin_law_summary_he.html",
+      "sortKey": 202605200001,
+      "titleHe": "למה המשבר החוקתי בישראל עובר דרך המשפט המינהלי?",
+      "paperTitle": "Israel's Constitutional Moment",
+      "authorsCardHe": "יואב דותן",
+      "sourceAuthors": [
+        "Yoav Dotan"
+      ],
+      "journal": "Israel Law Review",
+      "dateText": "פורסם אונליין: 4 בנובמבר 2023; גיליון: נובמבר 2023; כרך 56(3), עמ׳ 521-540",
+      "doiUrl": "https://doi.org/10.1017/S0021223723000249",
+      "topics": [
+        "constitutionalism-courts-rule-of-law",
+        "democratic-backsliding-populism",
+        "institutions-civil-society-public-service",
+        "public-opinion-polarization-violence"
+      ],
+      "image": {
+        "src": "html_qa/democracy_constitutionalising_system_summary_he.jpg",
+        "altHe": "איור על רגע חוקתי, משפט מינהלי ומאבק על ביקורת שיפוטית בישראל"
+      },
+      "datePublished": "2026-05-20",
+      "dateModified": "2026-05-20",
+      "summaryHe": "המשבר החוקתי חשף שההגנה השיפוטית בישראל נשענת בעיקר על משפט מינהלי, מחאה ציבורית ואמון מוסדי ולא על שכבה חוקתית קשיחה."
+    },
     {
       "slug": "democracy_majoritarian_consensus_constitution_summary_he",
       "file": "democracy_majoritarian_consensus_constitution_summary_he.html",
