@@ -10,7 +10,7 @@
   "summaryHe": "רפורמה דמוקרטית בבג״ץ צריכה לטפל בעובדות, בהרכבי שופטים, בזכות עמידה ובמינוי שופטים בלי למסור את בית המשפט לשליטה פוליטית.",
   "authorsCardHe": "יהושע (שוקי) שגב",
   "paperTitle": "Reforming the Israeli High Court of Justice: Proposed versus Desirable",
-  "authorsHtml": "Joshua Segev",
+  "authorsHtml": "<a href=\"https://www.netanya.ac.il/team/%D7%93%D7%A8-%D7%A9%D7%95%D7%A7%D7%99-%D7%A9%D7%92%D7%91/\" target=\"_blank\" rel=\"noopener noreferrer\">Joshua Segev</a>",
   "journal": "Israel Law Review",
   "dateText": "פורסם אונליין: 5 בדצמבר 2023; גיליון: נובמבר 2023; כרך 56(3), עמ׳ 440-455",
   "doiUrl": "https://doi.org/10.1017/S0021223723000237",
@@ -18,13 +18,15 @@
   "authors": [
     {
       "@type": "Person",
-      "name": "יהושע (שוקי) שגב"
+      "name": "יהושע (שוקי) שגב",
+      "url": "https://www.netanya.ac.il/team/%D7%93%D7%A8-%D7%A9%D7%95%D7%A7%D7%99-%D7%A9%D7%92%D7%91/"
     }
   ],
   "sourceAuthors": [
     {
       "@type": "Person",
-      "name": "Joshua Segev"
+      "name": "Joshua Segev",
+      "url": "https://www.netanya.ac.il/team/%D7%93%D7%A8-%D7%A9%D7%95%D7%A7%D7%99-%D7%A9%D7%92%D7%91/"
     }
   ],
   "topics": [
