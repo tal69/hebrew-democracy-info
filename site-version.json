@@ -1,8 +1,0 @@
----
-layout: null
-permalink: /site-version.json
----
-{
-  "cacheVersion": {{ site.data.site.cacheVersion | jsonify }},
-  "lastUpdated": {{ site.data.site.lastUpdated | jsonify }}
-}

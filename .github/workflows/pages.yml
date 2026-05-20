@@ -1,4 +1,4 @@
-name: Build and deploy Jekyll site
+name: Deploy redirect-only GitHub Pages site
 
 on:
   push:
@@ -24,17 +24,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v6
 
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-
-      - name: Make built site writable
-        run: sudo chown -R "$(id -u):$(id -g)" _site
-
-      - name: Build Pagefind index
-        run: npx -y pagefind --site _site --output-subdir pagefind
+      - name: Prepare redirect artifact
+        run: |
+          mkdir -p _site
+          cp index.html 404.html robots.txt .nojekyll _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
